@@ -1,112 +1,11 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-    <meta content="authenticity_token" name="csrf-param" />
-    <meta content="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" name="csrf-token" />
-    <meta charset='utf-8'>
-    <meta content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1' name='viewport'>
-    <title>DeepPHPOOP - treetree - Deploy</title>
-    <link href="/assets/css/fonts.css" media="screen" rel="stylesheet" />
-    <link href="/assets/css/application-5c814444b583f3014ed8cbb0e1cb3ff6.css" media="screen" rel="stylesheet" />
-    <link href='/assets/images/favicon.png' rel='icon' style='image:png'>
-    <meta content='deepphpoop' name='project-id'>
-    <link href='/servers_deployments.rss?token=u2c0ljxymnztvid2l99yx0wbogc8g3the4e3tkr7' rel='alternate' title='Deployment History for DeepPHPOOP' type='application/rss+xml'>
+    <?php include 'elements' . DIRECTORY_SEPARATOR . 'common_head.ctp'; ?>
 </head>
-<body class='js-notifications-new'>
-<div class='header'>
-    <div class='header__inner'>
-        <div class='container'>
-            <h1 class='branding'><a href="/">Deploy</a></h1>
-            <nav class='main-menu'>
-                <ul class='inline-list'>
-                    <li class='inline-list__item main-menu__item'>
-                        <a class="main-menu__link" href="/"><img alt="Dashboard Icon" class="main-menu__icon" src="/assets/images/icon-dashboard-b7fc48923a8411a5354a81b66e34b692.svg" />
-                            <span class='main-menu__text'>Dashboard</span>
-                        </a></li>
-                    <li class='inline-list__item is-active main-menu__item'>
-                        <a class="main-menu__link" href="/projects"><img alt="Projects Icon" class="main-menu__icon" src="/assets/images/icon-projects-f2e21fdd8c1a0dfc1b7e438396263705.svg" />
-                            <span class='main-menu__text'>Projects</span>
-                        </a></li>
-                    <li class='inline-list__item main-menu__item'>
-                        <a class="main-menu__link" href="/account"><img alt="Accounts Icon" class="main-menu__icon" src="/assets/images/icon-accounts-5573fc3b8b4b9b204d48ac0d24eb1799.svg" />
-                            <span class='main-menu__text'>Accounts</span>
-                        </a></li>
-                    <li class='inline-list__item main-menu__item'>
-                        <a class="main-menu__link" href="/users"><img alt="Users Icon" class="main-menu__icon" src="/assets/images/icon-users-4d09e071ba1c6eed77353183a91a9e9c.svg" />
-                            <span class='main-menu__text'>Users</span>
-                        </a></li>
-                </ul>
-            </nav>
-            <div class='user-menu'>
-                <a class="js-toggle-nav" href="#" rel="nofollow"><img alt="shukai zhao&#39;s Avatar" class="user-menu__icon avatar-image" src="/assets/images/avatar.png" />
-                </a></div>
-        </div>
-    </div>
-    <nav class='nav js-nav is-hidden'>
-        <div class='nav__container container'>
-            <div class='box box--heavy user-menu-block'>
-                <ul class='block-list'>
-                    <li class='block-list__item'>
-                        <a class="block-list__link" href="http://support.deployhq.com/">Support</a>
-                    </li>
-                    <li class='block-list__item'>
-                        <a class="block-list__link" href="/profile">Profile</a>
-                    </li>
-                    <li class='block-list__item'>
-                        <a class="block-list__link" href="/logout">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-<div class='second-navigation js-nav-bar is-menu-closed'>
-    <div class='container u-clearfix'>
-        <div class='second-navigation__title'>
-            <a class="g-text-semibold" href="/projects/deepphpoop">DeepPHPOOP</a>
-        </div>
-        <a class="second-navigation__toggle js-toggle-menu" href="#"><img alt="Menu Icon" class="second-navigation__toggle-img second-navigation__toggle-img--open" src="/assets/images/icon-menu-2eb971600fbdab538bd350931cbd5fe8.svg" />
-            <img alt="Menu Icon" class="second-navigation__toggle-img second-navigation__toggle-img--hide" src="/assets/images/icon-hide-3ee2bdbbde6b0a782e4c8d23241bccf6.svg" />
-        </a><ul class='second-menu'>
-        <li class='second-menu__item'>
-            <a class="second-menu__link" href="/projects/deepphpoop/deployments">Deployments</a>
-        </li>
-        <li class='second-menu__item is-dropdown'>
-            <a class="second-menu__link second-menu__link--dropdown" href="/projects/deepphpoop/edit">Settings</a>
-            <ul class='sub-menu box box--heavy'>
-                <li class='sub-menu__item'>
-                    <a class="sub-menu__link" href="/projects/deepphpoop/edit">General Settings</a>
-                </li>
-                <li class='sub-menu__item'>
-                    <a class="sub-menu__link" href="/projects/deepphpoop/servers">Servers &amp; Groups</a>
-                </li>
-                <li class='sub-menu__item'>
-                    <a class="sub-menu__link" href="/projects/deepphpoop/config_files">Config Files</a>
-                </li>
-                <li class='sub-menu__item'>
-                    <a class="sub-menu__link" href="/projects/deepphpoop/excluded_files">Excluded Files</a>
-                </li>
-                <li class='sub-menu__item'>
-                    <a class="sub-menu__link" href="/projects/deepphpoop/notifications">Notifications</a>
-                </li>
-                <li class='sub-menu__item'>
-                    <a class="sub-menu__link" href="/projects/deepphpoop/commands">SSH Commands</a>
-                </li>
-            </ul>
-        </li>
-        <li class='second-menu__item'>
-            <a href="https://github.com/shukai0828/DeepPHPOOP/tree/master">Browse Repository</a>
-        </li>
-        <li class='second-menu__item'>
-            <a href="https://github.com/shukai0828/DeepPHPOOP/commits/master">View Commits</a>
-        </li>
-        <li class='second-menu__item second-menu__item--deploy'>
-            <a href="/projects/deepphpoop/deployments/new">Deploy Now</a>
-        </li>
-    </ul>
-    </div>
-</div>
-
+<body class='js-notifications-edit'>
+<?php include 'elements' . DIRECTORY_SEPARATOR . 'common_header.ctp'; ?>
+<?php include 'elements' . DIRECTORY_SEPARATOR . 'project_menu.ctp'; ?>
 
 <div class='container'>
     <div class='flash flash--spaced flash--neutral'>
@@ -118,12 +17,12 @@
 
     <div class='section section--first box'>
         <div class='page-header'>
-            <h2 class='page-header__title g-heading-alpha'>New Notification</h2>
-            <p class='page-header__lead'>Use the form below to create a new notification to be sent after each deployment within this project.</p>
+            <h2 class='page-header__title g-heading-alpha'>Edit Notification</h2>
+            <p class='page-header__lead'>Change the URL for a notification for this project. Any future deployments will be notified to the URL you provide.</p>
         </div>
     </div>
     <div class='content--constrained'>
-        <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/new" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+        <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/4de1dfa0-1d7e-4187-19ce-63cb983fb4f4/edit" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
             <div class='section section--first section--skinny box'>
                 <div class='form-group form-group--micro'>
                     <label class="form-label" for="hook_type">Notification Type</label>
@@ -141,22 +40,22 @@
         </form>
 
         <div class='notification-service' data-service='http_post'>
-            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications" class="new_notification" id="new_notification" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/4de1dfa0-1d7e-4187-19ce-63cb983fb4f4" class="edit_notification" id="edit_notification_25687" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
                 <input id="notification_hook_type" name="notification[hook_type]" type="hidden" value="http_post" />
                 <div class='section section--first section--skinny box'>
                     <h3 class='form-heading form-heading--spaced g-heading-beta'>Notification: HTTP Post</h3>
                     <div class='form-group'>
                         <label class="form-label" for="notification_http_post_url">Endpoint</label>
-                        <input class="form-control" id="notification_http_post_url" name="notification[properties][url]" type="text" />
+                        <input class="form-control" id="notification_http_post_url" name="notification[properties][url]" type="text" value="http://shukai0828.github.io/database/database-design-nfs/" />
                         <p class='form-hint'>This should be an HTTP or HTTPS URL which will receive the payload.</p>
                     </div>
                     <div class='form-group'>
                         <label class="form-label" for="notification_http_post_username">Username</label>
-                        <input class="form-control" id="notification_http_post_username" name="notification[properties][username]" type="text" />
+                        <input class="form-control" id="notification_http_post_username" name="notification[properties][username]" type="text" value="treetree1303@gmail.com" />
                     </div>
                     <div class='form-group'>
                         <label class="form-label" for="notification_http_post_api_key">API Key or password</label>
-                        <input class="form-control" id="notification_http_post_api_key" name="notification[properties][api_key]" type="password" />
+                        <input class="form-control" id="notification_http_post_api_key" name="notification[properties][api_key]" type="password" value="Dudu1027" />
                         <p class='form-hint'>HTTP Basic authentication will be used to log into the endpoint.</p>
                     </div>
                 </div>
@@ -168,7 +67,7 @@
         </div>
 
         <div class='is-hidden notification-service' data-service='hipchat'>
-            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications" class="new_notification" id="new_notification" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/4de1dfa0-1d7e-4187-19ce-63cb983fb4f4" class="edit_notification" id="edit_notification_25687" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
                 <input id="notification_hook_type" name="notification[hook_type]" type="hidden" value="hipchat" />
                 <div class='section section--first section--skinny box'>
                     <div class='form-group'>
@@ -200,7 +99,7 @@
         </div>
 
         <div class='is-hidden notification-service' data-service='flowdock'>
-            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications" class="new_notification" id="new_notification" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/4de1dfa0-1d7e-4187-19ce-63cb983fb4f4" class="edit_notification" id="edit_notification_25687" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
                 <input id="notification_hook_type" name="notification[hook_type]" type="hidden" value="flowdock" />
                 <div class='section section--first section--skinny box'>
                     <div class='form-group'>
@@ -224,7 +123,7 @@
         </div>
 
         <div class='is-hidden notification-service' data-service='new_relic'>
-            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications" class="new_notification" id="new_notification" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/4de1dfa0-1d7e-4187-19ce-63cb983fb4f4" class="edit_notification" id="edit_notification_25687" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
                 <input id="notification_hook_type" name="notification[hook_type]" type="hidden" value="new_relic" />
                 <div class='section section--first section--skinny box'>
                     <div class='form-group'>
@@ -233,7 +132,7 @@
                     </div>
                     <div class='form-group'>
                         <label class="form-label" for="notification_new_relic_api_key">API Key</label>
-                        <input class="form-control" id="notification_new_relic_api_key" name="notification[properties][api_key]" type="text" />
+                        <input class="form-control" id="notification_new_relic_api_key" name="notification[properties][api_key]" type="text" value="Dudu1027" />
                         <p class='form-hint'>Please ensure that your New Relic API key is enabled in Integrations &rarr; Data Sharing.</p>
                     </div>
                 </div>
@@ -245,7 +144,7 @@
         </div>
 
         <div class='is-hidden notification-service' data-service='codebase'>
-            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications" class="new_notification" id="new_notification" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/4de1dfa0-1d7e-4187-19ce-63cb983fb4f4" class="edit_notification" id="edit_notification_25687" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
                 <input id="notification_hook_type" name="notification[hook_type]" type="hidden" value="codebase" />
                 <div class='section section--first section--skinny box'>
                     <div class='form-group'>
@@ -262,11 +161,11 @@
                     </div>
                     <div class='form-group'>
                         <label class="form-label" for="notification_codebase_username">Username</label>
-                        <input class="form-control" id="notification_codebase_username" name="notification[properties][username]" type="text" />
+                        <input class="form-control" id="notification_codebase_username" name="notification[properties][username]" type="text" value="treetree1303@gmail.com" />
                     </div>
                     <div class='form-group'>
                         <label class="form-label" for="notification_codebase_api_key">API key</label>
-                        <input class="form-control" id="notification_codebase_api_key" name="notification[properties][api_key]" type="text" />
+                        <input class="form-control" id="notification_codebase_api_key" name="notification[properties][api_key]" type="text" value="Dudu1027" />
                     </div>
                 </div>
                 <div class='form-submit'>
@@ -277,7 +176,7 @@
         </div>
 
         <div class='is-hidden notification-service' data-service='campfire'>
-            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications" class="new_notification" id="new_notification" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/4de1dfa0-1d7e-4187-19ce-63cb983fb4f4" class="edit_notification" id="edit_notification_25687" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
                 <input id="notification_hook_type" name="notification[hook_type]" type="hidden" value="campfire" />
                 <div class='section section--first section--skinny box'>
                     <div class='form-group'>
@@ -290,7 +189,7 @@
                     </div>
                     <div class='form-group'>
                         <label class="form-label" for="notification_campfire_api_key">API Key</label>
-                        <input class="form-control" id="notification_campfire_api_key" name="notification[properties][api_key]" type="text" />
+                        <input class="form-control" id="notification_campfire_api_key" name="notification[properties][api_key]" type="text" value="Dudu1027" />
                     </div>
                 </div>
                 <div class='form-submit'>
@@ -301,7 +200,7 @@
         </div>
 
         <div class='is-hidden notification-service' data-service='slack'>
-            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications" class="new_notification" id="new_notification" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+            <form accept-charset="UTF-8" action="/projects/deepphpoop/notifications/4de1dfa0-1d7e-4187-19ce-63cb983fb4f4" class="edit_notification" id="edit_notification_25687" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
                 <input id="notification_hook_type" name="notification[hook_type]" type="hidden" value="slack" />
                 <div class='section section--first section--skinny box'>
                     <div class='form-group'>
@@ -374,119 +273,9 @@
 
 
 </div>
-<div class='footer'>
-    <div class='container'>
-        <div class='row'>
-            <div class='column column--quarter'>
-                <h5 class='footer-heading g-heading-gamma'>About</h5>
-                <ul class='footer-links'>
-                    <li class='footer-links__item'><a href="http://deployhq.com">Website</a></li>
-                    <li class='footer-links__item'><a href="http://deployhq.com/terms">Terms &amp; Conditions</a></li>
-                    <li class='footer-links__item'><a href="http://deployhq.com/privacy">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class='column column--quarter'>
-                <h5 class='footer-heading g-heading-gamma'>Support</h5>
-                <ul class='footer-links'>
-                    <li class='footer-links__item'><a href="http://support.deployhq.com/">Help &amp; Support</a></li>
-                    <li class='footer-links__item'><a href="http://twitter.com/deployhq">Twitter</a></li>
-                    <li class='footer-links__item'><a href="https://community.atechmedia.com/" target="_blank">Community</a></li>
-                    <li class='footer-links__item'><a href="http://status.atechmedia.com">Service Status</a></li>
-                </ul>
-            </div>
-            <div class='column column--quarter'>
-                <h5 class='footer-heading g-heading-gamma'>Products</h5>
-                <ul class='footer-links'>
-                    <li class='footer-links__item'><a href="https://www.codebasehq.com" target="_blank">Codebase</a></li>
-                    <li class='footer-links__item'><a href="https://sirportly.com/" target="_blank">Sirportly</a></li>
-                    <li class='footer-links__item'><a href="https://viaduct.io/" target="_blank">Viaduct</a></li>
-                </ul>
-            </div>
-            <div class='column column--quarter'>
-                <a class="footer__branding" href="http://atechmedia.com"><img alt="Atechmedia logo" src="/assets/images/atechmedia-logo-0c4d3f231c616ea3edec833d64afb407.png" /></a>
-            </div>
-        </div>
-        <p class='footer__copyright'>&copy; 2015 <a href="http://atechmedia.com">aTech Media Limited</a>. All rights reserved.</p>
-    </div>
-</div>
+<?php include 'elements' . DIRECTORY_SEPARATOR . 'common_footer.ctp'; ?>
+<!--- feedback element, no use here --->
 
-<div class='feedback-bar'>
-    <div class='container'>
-        <ul class='feedback-list'>
-            <li class='feedback-list__item'>
-                <a class="feedback-list__link js-feedback-form" href="#">Report Bug</a>
-                <div class='feedback-bar__form'>
-                    <h2 class='form-heading g-heading-gamma'>Report Bug</h2>
-                    <form accept-charset="UTF-8" action="/feedback/report_bug" class="js-feedback" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
-                        <input id="url" name="url" type="hidden" value="https://treetree.beta.deployhq.com/projects/deepphpoop/notifications/new?action=new&amp;controller=notifications&amp;project_id=deepphpoop" />
-                        <div class='form-group'>
-                            <label class="form-label" for="description">Describe Problem</label>
-<textarea class="textarea" id="description" name="description" rows="6">
-</textarea>
-                            <p class='form-hint'>Please describe the bug you are experiencing.</p>
-                        </div>
-                        <div class='form-group'>
-                            <label class="form-label" for="browser">Browser</label>
-                            <input class="form-control" id="browser" name="browser" type="text" />
-                            <p class='form-hint'>What browser and browser version are you using?</p>
-                        </div>
-                        <button class="button button--positive button--small" name="button" type="Submit">Send</button>
-                    </form>
-
-                </div>
-            </li>
-            <li class='feedback-list__item'>
-                <a class="feedback-list__link js-feedback-form" href="#">Feedback</a>
-                <div class='feedback-bar__form'>
-                    <h2 class='form-heading g-heading-gamma'>Submit Feedback</h2>
-                    <form accept-charset="UTF-8" action="/feedback/feedback" class="js-feedback" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
-                        <div class='form-group'>
-                            <label class="form-label" for="summary">What do you think?</label>
-<textarea class="textarea" id="description" name="description" rows="6">
-</textarea>
-                        </div>
-                        <button class="button button--positive button--small" name="button" type="Submit">Send</button>
-                    </form>
-
-                </div>
-            </li>
-        </ul>
-        <p class='feedback-paragraph'>
-            You are currently using the beta version of Deploy.
-            <a href="https://treetree.deployhq.com/">Use the stable version →</a>
-        </p>
-    </div>
-</div>
-
-<script src="/assets/js/cdn.viaduct.io/webpush.js"></script>
-<script src="/assets/js/application-e862757933c6bd8eeafac280f820e01c.js"></script>
-<script>
-    //<![CDATA[
-    window.Utility || (window.Utility = {});
-    Utility.RailsVars = {"user_timezone":null,"vwp_token":"13c9299896384ac5ac3cf68c","project":"deepphpoop"};
-
-    (function() {
-        window.$this = new (App.Notifications || App.Base)();
-        if (typeof $this.new === 'function') {
-            return $this.new.call();
-        }
-    })();
-
-    //]]>
-</script>
-<script src='/assets/js/identity/remote.js' type='text/javascript'></script>
-<script>
-    //<![CDATA[
-    var atechIdentity = new AtechIdentity();
-    atechIdentity.host = 'http://pt.justdeployit.com';
-    atechIdentity.userKey = '3b2662a4-843b-798f-417b-5755dda2e195';
-    atechIdentity.applicationKey = '2a9869df-7c90-3f32-0538-0bec6f4c4129';
-    atechIdentity.expiry = 1420961897;
-    atechIdentity.authHash = 'eb6bba49b64d05041a27109b95f4b7ffd0908766';
-    atechIdentity.getRemoteUserData();
-    //]]>
-</script>
-
-<!--- Version 23fc98, served by vdtapp-531-8977-b20c049ef8 -->
+<?php include 'elements' . DIRECTORY_SEPARATOR . 'common_foot_js.ctp'; ?>
 </body>
 </html>
