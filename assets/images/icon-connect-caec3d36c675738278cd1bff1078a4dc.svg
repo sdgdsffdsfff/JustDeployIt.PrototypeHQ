@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+
+<path id="link-4-icon" d="M321.571,362.801L258.072,426.3c-47.6,47.599-124.772,47.601-172.373,0c-47.6-47.6-47.6-124.773,0-172.373
+
+	l63.499-63.5l41.385,41.384l-63.499,63.499c-24.704,24.704-24.703,64.899,0.001,89.604c24.703,24.704,64.899,24.705,89.604,0.001
+
+	l63.499-63.499L321.571,362.801z M362.801,321.571l63.499-63.499C473.9,210.474,473.9,133.3,426.3,85.7
+
+	c-47.601-47.6-124.774-47.6-172.374,0l-63.498,63.499l41.384,41.384l63.499-63.499c24.704-24.704,64.901-24.703,89.604,0
+
+	c24.704,24.704,24.704,64.9,0,89.604l-63.499,63.499L362.801,321.571z"/>
+
+</svg>
+

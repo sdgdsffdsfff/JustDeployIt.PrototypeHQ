@@ -1,0 +1,42 @@
+<div class='content'>
+    <div class='page-header form-group'>
+        <h2 class='page-header__title g-heading-alpha'>Server Group: TestingGroup</h2>
+    </div>
+    <form accept-charset="UTF-8" action="/projects/deepphpoop/server_groups/b9f12823-d554-8315-3307-02b09a3217f3" class="edit_server_group" id="edit_server_group_8953" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div>
+        <div class='form-group'>
+            <label class="form-label" for="server_group_name">Name</label>
+            <input class="form-control" id="server_group_name" name="server_group[name]" type="text" value="TestingGroup" />
+        </div>
+        <div class='form-group'>
+            <label class="form-label" for="server_group_branch">Branch</label>
+            <div class='form-select'>
+                <select id="server_group_branch" name="server_group[branch]"><option selected="selected" value="">Project default (master)</option>
+                    <option value="dev_zsk">dev_zsk</option>
+                    <option value="dev_zsk2">dev_zsk2</option>
+                    <option value="master">master</option></select>
+            </div>
+        </div>
+        <div class='form-group'>
+            <button class="button button--positive" name="button" type="submit">Create Server Group</button>
+        </div>
+    </form>
+
+
+    <h4 class='form-heading g-heading-gamma u-margin-top'>Automatic Deployment</h4>
+    <div class='content-block'>
+        <form accept-charset="UTF-8" action="/projects/deepphpoop/server_groups/b9f12823-d554-8315-3307-02b09a3217f3" class="edit_server_group" id="server_auto_deploy" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="wfMiVhNXMb+ooNQ01R8PX1mNVqnbYdm1WCt9k1EsHX8=" /></div><div class='form-group clearfix'>
+            <label class="form-checkbox form-checkbox--inline g-text-upcase" for="server_group_auto_deploy_true"><input checked="checked" class="form-checkbox__input" id="server_group_auto_deploy_true" name="server_group[auto_deploy]" type="radio" value="true" />
+                <span class='form-checkbox__text g-text-positive'>On</span>
+            </label><label class="form-checkbox form-checkbox--inline g-text-upcase" for="server_group_auto_deploy_false"><input class="form-checkbox__input" id="server_group_auto_deploy_false" name="server_group[auto_deploy]" type="radio" value="false" />
+            <span class='form-checkbox__text g-text-negative'>Off</span>
+        </label></div>
+        </form>
+
+        <p class='form-paragraph'>You can use the URL below as a Github or Codebase post-receive hook to trigger an automatic deployment of your project.</p>
+        <div class='form-group'>
+            <input class="form-control g-text-code" id="api_key" name="api_key" readonly="readonly" type="text" value="https://treetree.beta.deployhq.com/deploy/deepphpoop/to/testinggroup/4cl01d9kd1se" />
+        </div>
+        <p class='form-paragraph'>For more information please see our <a href="http://support.deployhq.com/articles/deployments">documentation pages</a>.</p>
+    </div>
+
+</div>

@@ -1,0 +1,110 @@
+{
+  "taps": [
+    {
+      "id": 603992251,
+      "tap_type": "note",
+      "message": "Beginning deployment from ffb12eca555d885e8f8892cdb7d842d8b7a3eaff to a04971d1dd5924b5d0bc71de2ab9d2e31f46ff9d (master)",
+      "server_id": null,
+      "timestamp": "2015-01-11T08:49:39.000Z"
+    },
+    {
+      "id": 603992254,
+      "tap_type": "note",
+      "message": "Deployment started by shukai zhao",
+      "server_id": null,
+      "timestamp": "2015-01-11T08:49:39.000Z"
+    },
+    {
+      "id": 603992257,
+      "tap_type": "note",
+      "message": "Updating cached repository from https://github.com/shukai0828/DeepPHPOOP.git",
+      "server_id": null,
+      "timestamp": "2015-01-11T08:49:40.000Z"
+    },
+    {
+      "id": 603992260,
+      "tap_type": "note",
+      "message": "Repository update completed",
+      "server_id": null,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992263,
+      "tap_type": "note",
+      "message": "Calculating changes required for deployment",
+      "server_id": null,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992266,
+      "tap_type": "note",
+      "message": "Connecting to server at f13-preview.royalwebhosting.net:21 (PASV)",
+      "server_id": 152206,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992269,
+      "tap_type": "info",
+      "message": "Connected to FTP server at f13-preview.royalwebhosting.net:21 (PASV)",
+      "server_id": 152206,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992272,
+      "tap_type": "info",
+      "message": "0 file(s) are no longer required and will be removed",
+      "server_id": 152206,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992275,
+      "tap_type": "info",
+      "message": "1 file(s) have been changed and will be uploaded",
+      "server_id": 152206,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992278,
+      "tap_type": "note",
+      "message": "Excluding file README.md",
+      "server_id": 152206,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992281,
+      "tap_type": "info",
+      "message": "1 config file(s) need to be uploaded",
+      "server_id": 152206,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992284,
+      "tap_type": "note",
+      "message": "Uploading deployment/deployment/config.ini",
+      "server_id": 152206,
+      "timestamp": "2015-01-11T08:49:41.000Z"
+    },
+    {
+      "id": 603992287,
+      "tap_type": "info",
+      "message": "Disconnected from FTP server",
+      "server_id": 152206,
+      "timestamp": "2015-01-11T08:49:42.000Z"
+    },
+    {
+      "id": 603992290,
+      "tap_type": "note",
+      "message": "Notifying treetree1303@gmail.com",
+      "server_id": null,
+      "timestamp": "2015-01-11T08:49:42.000Z"
+    },
+    {
+      "id": 603992293,
+      "tap_type": "success",
+      "message": "Deployment complete",
+      "server_id": null,
+      "timestamp": "2015-01-11T08:49:42.000Z"
+    }
+  ],
+  "status": "completed"
+}

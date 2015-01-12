@@ -1,0 +1,262 @@
+div#atechIdentityBar {
+    position: fixed;
+    bottom: 0;
+    display: block !important;
+    right: 30px;
+    height: 30px;
+    background: #fff;
+    background: rgba(250, 250, 250, 0.95);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    color: #000;
+    font-size: 11px;
+    z-index: 5;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+div#atechIdentityBar h1 a {
+    height: 30px;
+    float: right;
+    width: 24px;
+    padding: 8px 8px;
+    color: #000;
+    text-decoration: none;
+    font-size: 100%;
+    background: url(../images/icons/user.svg) no-repeat center 7px;
+    background-size: 18px 18px;
+    text-indent: -400000px
+}
+
+div#atechIdentityBar ul.apps {
+    float: right;
+    display: none
+}
+
+div#atechIdentityBar ul.apps li.utility {
+    float: left;
+    background: #fff
+}
+
+div#atechIdentityBar ul.apps li.utility:first-child {
+    border-left: 1px solid #ccc
+}
+
+div#atechIdentityBar ul.apps li.utility:last-child {
+    border-right: 1px solid #ccc
+}
+
+div#atechIdentityBar ul.apps li.utility a {
+    height: 30px;
+    padding: 8px 7px;
+    display: block;
+    background-size: 14px 14px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    text-indent: -40000px
+}
+
+div#atechIdentityBar ul.apps li.utility a:hover {
+    background-color: rgba(0, 0, 0, 0.08)
+}
+
+div#atechIdentityBar ul.apps li.utility.profile {
+    border-left: 1px solid #ccc
+}
+
+div#atechIdentityBar ul.apps li.utility.profile a {
+    background-image: url(../images/icons/profile.svg);
+    background-size: 15px 15px;
+    background-position: center center
+}
+
+div#atechIdentityBar ul.apps li.utility.support a {
+    background-image: url(../images/icons/support.svg)
+}
+
+div#atechIdentityBar ul.apps li.utility.blog a {
+    background-image: url(../images/icons/news.svg)
+}
+
+div#atechIdentityBar ul.apps li.app {
+    float: left;
+    border-left: 1px solid #ddd
+}
+
+div#atechIdentityBar ul.apps li.app a.active {
+    background: rgba(0, 0, 0, 0.05)
+}
+
+div#atechIdentityBar ul.apps li.app a.root {
+    height: 30px;
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    text-transform: lowercase
+}
+
+div#atechIdentityBar ul.apps li.app.codebase a.root {
+    color: #00c6ff
+}
+
+div#atechIdentityBar ul.apps li.app.sirportly a.root {
+    color: #f45831
+}
+
+div#atechIdentityBar ul.apps li.app.deploy a.root {
+    color: #b0ca0d
+}
+
+div#atechIdentityBar ul.apps li.app:first-child {
+    border-left: 1px solid #efefef
+}
+
+div#atechIdentityBar ul.apps li.app:last-child {
+    border-right: 1px solid #ccc
+}
+
+div#atechIdentityBar ul.apps li.app ul.assignments {
+    z-index: 1;
+    position: fixed;
+    bottom: 28px;
+    margin-left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none
+}
+
+div#atechIdentityBar ul.apps li.app ul.assignments li {
+    padding: 0
+}
+
+div#atechIdentityBar ul.apps li.app ul.assignments li a {
+    color: #000;
+    display: block;
+    width: 160px;
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #ccc;
+    text-decoration: none
+}
+
+div#atechIdentityBar ul.apps li.app ul.assignments li:last-child a {
+    border-bottom: 0
+}
+
+div#atechIdentityBar ul.apps li.app ul.assignments li a:hover {
+    background: rgba(220, 220, 220, 0.95)
+}
+
+div#atechIdentityBar div.profileEdit {
+    position: fixed;
+    width: 300px;
+    display: none;
+    color: #000;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #fff;
+    bottom: 20px;
+    right: 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4)
+}
+
+div#atechIdentityBar div.profileEdit h2 {
+    font-size: 130%;
+    margin: 15px 15px 0 15px
+}
+
+div#atechIdentityBar div.profileEdit p.text {
+    line-height: 1.5;
+    color: #888;
+    margin: 5px 15px 0 15px
+}
+
+div#atechIdentityBar div.profileEdit ul.others {
+    background: #efefef;
+    border-top: 1px solid #ccc;
+    padding: 7px 15px 7px 15px;
+    margin-top: 15px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    line-height: 2.0;
+    font-size: 110%
+}
+
+div#atechIdentityBar div.profileEdit ul.others li {
+    opacity: 0.5;
+    padding-left: 18px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 0 5px
+}
+
+div#atechIdentityBar div.profileEdit ul.others li.emails {
+    background-image: url(../images/icons/email.svg)
+}
+
+div#atechIdentityBar div.profileEdit ul.others li.twofactor {
+    background-image: url(../images/icons/lock.svg)
+}
+
+div#atechIdentityBar div.profileEdit ul.others li.pic {
+    background-image: url(../images/icons/image.svg)
+}
+
+div#atechIdentityBar div.profileEdit ul.others li a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc
+}
+
+div#atechIdentityBar div.profileEdit p.submit {
+    margin: 12px 15px
+}
+
+div#atechIdentityBar div.profileEdit dl {
+    margin: 8px 15px
+}
+
+div#atechIdentityBar div.profileEdit dl dd {
+    margin: 6px 0;
+    font-weight: 600
+}
+
+div#atechIdentityBar div.profileEdit dl dd input {
+    padding: 4px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #ccc
+}
+
+div#atechIdentityBar div.profileEdit dl.name dd input, div#atechIdentityBar div.profileEdit dl.password dd input {
+    width: 45%
+}
+
+div#atechIdentityBar div.profileEdit dl.name dd input:first-child, div#atechIdentityBar div.profileEdit dl.password dd input:first-child {
+    margin-right: 2%
+}
+
+p#identityTooltip {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #000;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    width: 100px;
+    font-size: 90%;
+    padding: 5px 0;
+    text-align: center
+}
