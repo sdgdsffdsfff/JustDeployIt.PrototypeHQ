@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<meta charset='UTF-8'>
-	<meta content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1' name='viewport'>
-	<title>treetree - Deploy</title>
-	<link href="/assets/css/fonts.css" media="screen" rel="stylesheet" />
-	<link href="/assets/css/application-5c814444b583f3014ed8cbb0e1cb3ff6.css" media="screen" rel="stylesheet" />
+	<?php include 'elements' . DIRECTORY_SEPARATOR . 'common_head.ctp'; ?>
 </head>
 <body class='session-page'>
 	<div class='session-header'>

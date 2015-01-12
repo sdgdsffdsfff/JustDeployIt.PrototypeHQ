@@ -1,5 +1,7 @@
+    <!---- no using these two meta
     <meta content="authenticity_token" name="csrf-param" />
     <meta content="hCBCVjuHS1LiQhvPKI9TXQFfxx4W5W8ql3IgroD+9js=" name="csrf-token" />
+    -->
     <meta charset='utf-8'>
     <meta content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1' name='viewport'>
     <title>treetree - Deploy</title>
