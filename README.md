@@ -25,6 +25,6 @@
 
 1. remote.js, bar.css, 页面最底部的信息条
 2. 跟remote.js有关的资源，icons等删除
-2. 去除功能跳转见在url里出现的类似token的信息
+2. 去除功能跳转见在url里出现的类似token的信息，同时参考deployments_exectued在js里的token变化时show full log不工作的因素
 
 [1]: https://treetree.beta.deployhq.com/login
