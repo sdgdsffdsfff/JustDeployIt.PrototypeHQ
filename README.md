@@ -2,6 +2,8 @@
 
 > 基于[DeployHQ2.0 Beta][1]制作
 
+使用了自制的简单页面拼接工具，便于进行原子化的页面组装，提高效果预览的效率，降低修改成本。
+
 ## 模拟数据及调用关系 ##
 
 1. `projects/deepphpoop/depoloyments.js.html` ，供deployments_preview.html和deployments_executing.html调用
@@ -17,6 +19,12 @@
  2. `projects/deepphpoop/servers/new_ssh.html`，ssh类型的服务器
 4. `deployments_poll.json`，供deployments_executing.html调用
 3. `commands_line_response.html`，供commands_index_list.html调用
+4. `remote/user_data.js`，被remote.js脚本调用，获取用户详细信息
 
+## TODO ##
+
+1. remote.js, bar.css, 页面最底部的信息条
+2. 跟remote.js有关的资源，icons等删除
+2. 去除功能跳转见在url里出现的类似token的信息
 
 [1]: https://treetree.beta.deployhq.com/login
