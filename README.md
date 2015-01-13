@@ -28,4 +28,10 @@
 2. 去除功能跳转见在url里出现的类似token的信息，同时参考deployments_exectued在js里的token变化时show full log不工作的因素
 4. 功能和页面间的跳转衔接工作正常
 
+## 注意事项 ##
+
+1. 传递链接时，链接里类似GUID的字符串去除
+2. 理解deployhq的JS机制
+3. common_foot_js.ctp里，(App.Projects || App.Base)字符串中，Projects根据功能不同自动替换
+
 [1]: https://treetree.beta.deployhq.com/login
