@@ -6,13 +6,13 @@
     <meta charset='utf-8'>
     <meta content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1' name='viewport'>
     <title>DeepPHPOOP - treetree - Deploy</title>
-    <link href="/assets/css/fonts.css" media="screen" rel="stylesheet" />
+    <link href="/assets/css/7257492/624966/css/fonts.css" media="screen" rel="stylesheet" />
     <link href="/assets/css/application-4abd7d5764f0748a74fcf362045c3021.css" media="screen" rel="stylesheet" />
     <link href='/assets/images/favicon.png' rel='icon' style='image/png'>
     <meta content='deepphpoop' name='project-id'>
     <link href='/projects/deepphpoop/deployments.rss?token=u2c0ljxymnztvid2l99yx0wbogc8g3the4e3tkr7' rel='alternate' title='Deployment History for DeepPHPOOP' type='application/rss+xml'>
 </head>
-<body class='js-deployments-show'>
+<body class='js-projects-edit'>
 <div class='header'>
     <div class='header__inner'>
         <div class='container'>
@@ -68,13 +68,13 @@
         <a class="second-navigation__toggle js-toggle-menu" href="#"><img alt="Menu Icon" class="second-navigation__toggle-img second-navigation__toggle-img--open" src="/assets/images/icon-menu-2eb971600fbdab538bd350931cbd5fe8.svg" />
             <img alt="Menu Icon" class="second-navigation__toggle-img second-navigation__toggle-img--hide" src="/assets/images/icon-hide-3ee2bdbbde6b0a782e4c8d23241bccf6.svg" />
         </a><ul class='second-menu'>
-        <li class='is-active second-menu__item'>
+        <li class='second-menu__item'>
             <a class="second-menu__link" href="/projects/deepphpoop/deployments">Deployments</a>
         </li>
-        <li class='second-menu__item is-dropdown'>
+        <li class='is-active is-dropdown second-menu__item'>
             <a class="second-menu__link second-menu__link--dropdown" href="/projects/deepphpoop/edit">Settings</a>
             <ul class='sub-menu box box--heavy'>
-                <li class='sub-menu__item'>
+                <li class='is-active sub-menu__item'>
                     <a class="sub-menu__link" href="/projects/deepphpoop/edit">General Settings</a>
                 </li>
                 <li class='sub-menu__item'>
@@ -112,185 +112,128 @@
     <div class='flash flash--spaced flash--neutral'>
         <p>This project was last deployed 2 days ago to <strong>RoyalWebHosting</strong>. <a href="/projects/deepphpoop/deployments/6ac8f26c-17b6-8610-a1a5-8d6c240e3d0f">View details</a>.</p>
     </div>
+    <div class='flash flash--spaced flash--pending'>
+        <p>Caching repository in progress. <a href="/projects/deepphpoop/repository/caching">What does this mean?</a>.</p>
+    </div>
 
 </div>
 <div class='container clearfix'>
-
-    <p class='page-back'><a class="page-back__link" href="/projects/deepphpoop/deployments">&#8592; Back to list</a></p>
-    <div class='section section--first box'>
-        <div class='page-header'>
-            <h2 class='page-header__title g-heading-alpha'>Deployments</h2>
-            <p class='page-header__lead'>
-                The log below outlines all the stages which have been carried out for this deployment.
-                The page will automatically update as the deployment is running.
-            </p>
+    <div class="flash flash--spaced flash--success"><p>A repository recache has been initiated successfully.</p></div>
+    <div class='content--constrained'>
+        <form accept-charset="UTF-8" action="/projects/deepphpoop" class="edit_project" id="edit_project_91546" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="QFy+K8j0wqfIVSkkd89qe/QEo2wgm/4H1FtjcbzE47I=" /></div><div class='section section--first section--skinny box'>
+            <h2 class='form-heading'>Project Settings</h2>
+            <div class='form-group'>
+                <label class="form-label" for="project_name">Name</label>
+                <input class="form-control" id="project_name" name="project[name]" type="text" value="DeepPHPOOP" />
+                <p class='form-hint'>The name of a project is used to identify it within your Deploy account.</p>
+            </div>
+            <div class='form-group'>
+                <label class="form-label" for="project_notification_email">Notification Email Address</label>
+                <input class="form-control" id="project_notification_email" name="project[notification_email]" type="text" value="treetree1303@gmail.com" />
+                <p class='form-hint'>Leave blank to use users email address.</p>
+            </div>
         </div>
+            <div class='section section--first section--skinny box'>
+                <h3 class='form-heading g-heading-beta u-margin-zero'>Repository Settings</h3>
+                <p class='form-paragraph u-margin-top'>
+                    If you need to change your branch or repository URL you can do so below.
+                </p>
+                <div class='js-repo-manual-details is-git-repo'>
+                    <h3 class='form-heading g-heading-gamma'>Repository Type</h3>
+                    <div class='form-group'>
+                        <div class='radio-block radio-block--no-label'>
+                            <label class="radio-block__group radio-block__group--full" for="scm_type_git"><input checked="checked" class="radio-block__input js-scm-type" id="scm_type_git" name="repository[scm_type]" type="radio" value="git" />
+                                <span>Git</span>
+                            </label><label class="radio-block__group radio-block__group--full" for="scm_type_subversion"><input class="radio-block__input js-scm-type" id="scm_type_subversion" name="repository[scm_type]" type="radio" value="subversion" />
+                            <span>Subversion</span>
+                        </label><label class="radio-block__group radio-block__group--full" for="scm_type_mercurial"><input class="radio-block__input js-scm-type" id="scm_type_mercurial" name="repository[scm_type]" type="radio" value="mercurial" />
+                            <span>Mercurial</span>
+                        </label></div>
+                    </div>
+                    <hr class='form-separator'>
+                    <div class='form-group'>
+                        <label class="form-label" for="repository_url">Full URL to repository</label>
+                        <input class="form-control js-repo-url" id="repository_url" name="repository[url]" type="text" value="https://github.com/shukai0828/DeepPHPOOP.git" />
+                    </div>
+                    <div class='form-group is-related-git is-related-mercurial'>
+                        <label class="form-label" for="repository_port">Custom repository port (if required)</label>
+                        <input class="form-control" id="repository_port" name="repository[port]" type="text" />
+                    </div>
+                    <div class='form-group'>
+                        <label class="form-label" for="repository_root_path">Subdirectory to deploy from</label>
+                        <input class="form-control" id="repository_root_path" name="repository[root_path]" type="text" />
+                        <p class='form-hint'>
+                            The subdirectory in your repository that you wish to deploy.
+                            Leave blank to use the default specified in the project.
+                        </p>
+                    </div>
+                    <div class='form-group is-related-git is-related-mercurial'>
+                        <label class="form-label" for="repository_branch">Default branch you wish to deploy from?</label>
+                        <div class='form-select'>
+                            <select id="repository_branch" name="repository[branch]"><option value="dev_zsk">dev_zsk</option>
+                                <option value="dev_zsk2">dev_zsk2</option>
+                                <option selected="selected" value="master">master</option></select>
+                        </div>
+                    </div>
+                    <div class='form-group js-auth-requirement-http is-hidden'>
+                        <div class='form-group'>
+                            <label class="form-label" for="repository_username">Username</label>
+                            <input class="form-control" id="repository_username" name="repository[username]" type="text" value="treetree1303@gmail.com" />
+                        </div>
+                        <div class='form-group'>
+                            <label class="form-label" for="repository_password">Password</label>
+                            <input class="form-control" id="repository_password" name="repository[password]" type="password" />
+                            <p class='form-hint'>Username/Password for HTTP only.</p>
+                        </div>
+                    </div>
+                    <div class='form-group js-auth-requirement-ssh'>
+                        <label class="form-label" for="deploy_generated_public">Use this public key and add it to your repository server&#39;s authorized keys:</label>
+                        <textarea class='textarea textarea--snippet' id='deploy_generated_public' readonly>ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA0DeiGr+0qU5Fm2vmIW7ViVNPmxhnt4vVwC4VYcJCoA03zMnnIin9VRBW82kvnj9gyT/CWFLqkVgMBlqxZuh7WgbD3A4S6mMF+HWbDxHJFdW6gWVlVv3z98W/CeuDtCmogrNI/y1sE2dqyfXhJstoK17+OiYbuOjIK2X035D8etIYC1Ej0mCbHpyaTQuH4XKzHqAuRtT7dA0fh17T+BvFOUnSlM/n21n+xVFnLEYmoLrBJ5rj3S9sqU6cXWRe0PKmHiu/nzZ0Sj/a6d3ak0LuVxtbjPXTp/QYL0uaVux2KZ8IYJeKuntvhnOgq4EMNi/K4ikMXgfZhsDRC8JXLwikIQ==</textarea>
+                    </div>
+                </div>
+
+                <div class='form-group js-auth-requirement-ssh'>
+                    <p class='form-paragraph u-margin-top'>
+                        Want to use your own keys? <a class="js-key-upload g-text-info g-text-underlined" href="#">Upload your private key</a>.
+                    </p>
+                </div>
+                <div class='form-group js-private-key-upload is-hidden'>
+                    <label class="form-label" for="custom_private_key">To use your own private key, copy and paste it into the box below:</label>
+<textarea class="textarea" id="project_custom_private_key" name="project[custom_private_key]">
+</textarea>
+                    <p class='form-paragraph u-margin-top'>
+                        Or use the public key that Deploy has <a class="js-use-generated-public-key g-text-info g-text-underlined" href="#">generated for you</a>.
+                    </p>
+                </div>
+
+            </div>
+            <div class='form-submit'>
+                <button class="button button--positive" name="button" type="submit">Save Changes</button>
+            </div>
+        </form>
+
     </div>
-    <div class='flash flash--completed flash--spaced' data-status='completed' id='js-deployment-status'>
-        <div class='is-hidden js-status js-status--pending'>
-            <h4>Please wait…</h4>
-            <p>
-                We're just waiting for some spare capacity on our servers to run your deployment.
-                This doesn't usually take more than a few moments.
-                This page will update automatically.
-            </p>
-            <p>
-                <a class="button button--negative" confirm="Are you sure you want to abort this deployment?" data-method="post" href="/projects/deepphpoop/deployments/6ac8f26c-17b6-8610-a1a5-8d6c240e3d0f/abort" rel="nofollow">Abort Deployment</a>
-            </p>
-        </div>
-        <div class='is-hidden js-status js-status--running'>
-            <h4 class='flash__heading'>Deploying…</h4>
-            <p>
-                <a confirm="Are you sure you want to abort this deployment?" data-method="post" href="/projects/deepphpoop/deployments/6ac8f26c-17b6-8610-a1a5-8d6c240e3d0f/abort" rel="nofollow">Abort Deployment!</a>
-            </p>
-            <p>
-                Your deployment is currently in progress.
-                The deployment log below will update live to inform you of the progress.
-                This box will turn green when the deployment has completed.
-            </p>
-        </div>
-        <div class='js-status js-status--completed'>
-            <h4 class='flash__heading'>Deployment has finished successfully!</h4>
-            <p>
-                The deployment is now complete. All files were transferred successfully to your
-                1 server.
-            </p>
-        </div>
-        <div class='is-hidden js-status js-status--failed'>
-            <h4 class='flash__heading'>Uh oh! Something went wrong with this deployment…</h4>
-            <p>
-                <a class="button" data-method="post" href="/projects/deepphpoop/deployments/6ac8f26c-17b6-8610-a1a5-8d6c240e3d0f/retry" rel="nofollow">Retry Deployment?</a>
-            </p>
-            <p>
-                We're very sorry to report that something went wrong while trying to run your deployment.
-                Please check the log below and contact <a href="mailto:support@deployhq.com">support@deployhq.com</a> if you need assistance.
-            </p>
-        </div>
-    </div>
-
-    <div class='section--first js-progress'>
-        <div class='is-expanded js-log-entries log'>
-            <div class='log-item log-item--success' id='603992293'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Deployment complete
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' id='603992290'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Notifying treetree1303@gmail.com
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--info' data-server='152206' id='603992287'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Disconnected from FTP server
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' data-server='152206' id='603992284'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Uploading deployment/deployment/config.ini
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--info' data-server='152206' id='603992281'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        1 config file(s) need to be uploaded
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' data-server='152206' id='603992278'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Excluding file README.md
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--info' data-server='152206' id='603992275'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        1 file(s) have been changed and will be uploaded
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--info' data-server='152206' id='603992272'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        0 file(s) are no longer required and will be removed
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--info' data-server='152206' id='603992269'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Connected to FTP server at f13-preview.royalwebhosting.net:21 (PASV)
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' data-server='152206' id='603992266'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Connecting to server at f13-preview.royalwebhosting.net:21 (PASV)
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' id='603992263'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Calculating changes required for deployment
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' id='603992260'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Repository update completed
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' id='603992257'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Updating cached repository from <a href="https://github.com/shukai0828/DeepPHPOOP/tree/master">https://github.com/shukai0828/DeepPHPOOP.git</a>
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' id='603992254'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Deployment started by shukai zhao
-                    </p>
-                </div>
-            </div>
-            <div class='log-item log-item--note' id='603992251'>
-                <div class='log-item__inner'>
-                    <p class='log-item__date g-text-micro'>11 Jan 08:49</p>
-                    <p class='log-item__message'>
-                        Beginning deployment from ffb12eca555d885e8f8892cdb7d842d8b7a3eaff to a04971d1dd5924b5d0bc71de2ab9d2e31f46ff9d (master)
-                    </p>
-                </div>
-            </div>
-
+    <div class='sidebar'>
+        <div class='content-block'>
+            <h4 class='sidebar__heading g-heading-gamma'>GitHub Repository</h4>
+            <p>Any links to this repository will be opened from your GitHub account.</p>
+            <p><a href="http://github.com"><img alt="GitHub" src="/assets/images/hosting_service_logos/github.png" /></a></p>
+            <ul>
+                <li><a class="u-text-link" href="https://github.com/shukai0828/DeepPHPOOP/tree/master">Browse your repository</a></li>
+                <li><a class="u-text-link" href="http://github.com">About GitHub</a></li>
+            </ul>
+            <h4 class='sidebar__heading g-heading-gamma'>Test Access</h4>
+            <p>Push the button below and we'll run a quick test to see if we can login to your servers and repository.</p>
+            <p>The result will be shown below.</p>
+            <p><a class="button" href="#">Run Tests</a></p>
+            <h4 class='sidebar__heading g-heading-gamma'>Recache Repository</h4>
+            <p>Made some changes to your repository that Deploy hasn't picked up yet?</p>
+            <p>Press this button to recache your repository.</p>
+            <p><a class="button" data-confirm="Are you sure you want to recache your repository? You may be unavailable to Deploy this repository for a few minutes." data-method="post" href="/projects/deepphpoop/repository/recache" rel="nofollow">Recache Repository</a></p>
+            <h4 class='sidebar__heading g-heading-gamma'>Delete Project</h4>
+            <p>A project’s server information and configuration files can not be accessed once deleted.</p>
+            <p><a class="button button--negative" data-confirm="Are you sure you wish to remove this project?" data-method="delete" href="/projects/deepphpoop" rel="nofollow">Delete Project</a></p>
+            <p>If you need more space for projects, why not <a href="/billing/package">upgrade your account</a>?</p>
         </div>
     </div>
 
@@ -339,7 +282,7 @@
                 <div class='feedback-bar__form'>
                     <h2 class='form-heading g-heading-gamma'>Report Bug</h2>
                     <form accept-charset="UTF-8" action="/feedback/report_bug" class="js-feedback" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QFy+K8j0wqfIVSkkd89qe/QEo2wgm/4H1FtjcbzE47I=" /></div>
-                        <input id="url" name="url" type="hidden" value="https://treetree.beta.deployhq.com/projects/deepphpoop/deployments/6ac8f26c-17b6-8610-a1a5-8d6c240e3d0f?action=show&amp;controller=deployments&amp;id=6ac8f26c-17b6-8610-a1a5-8d6c240e3d0f&amp;project_id=deepphpoop" />
+                        <input id="url" name="url" type="hidden" value="https://treetree.beta.deployhq.com/projects/deepphpoop/edit?action=edit&amp;controller=projects&amp;id=deepphpoop" />
                         <div class='form-group'>
                             <label class="form-label" for="description">Describe Problem</label>
 <textarea class="textarea" id="description" name="description" rows="6">
@@ -384,12 +327,12 @@
 <script>
     //<![CDATA[
     window.Utility || (window.Utility = {});
-    Utility.RailsVars = {"user_timezone":"Etc/UTC","vwp_token":"13c9299896384ac5ac3cf68c","project":"deepphpoop","deployment":"6ac8f26c-17b6-8610-a1a5-8d6c240e3d0f","vwp_channel_key":"private-deployment-7276387"};
+    Utility.RailsVars = {"user_timezone":"Etc/UTC","vwp_token":"13c9299896384ac5ac3cf68c","project":"deepphpoop"};
 
     (function() {
-        window.$this = new (App.Deployments || App.Base)();
-        if (typeof $this.show === 'function') {
-            return $this.show.call();
+        window.$this = new (App.Projects || App.Base)();
+        if (typeof $this.edit === 'function') {
+            return $this.edit.call();
         }
     })();
 
@@ -402,12 +345,12 @@
     atechIdentity.host = 'http://pt.justdeployit.com';
     atechIdentity.userKey = '3b2662a4-843b-798f-417b-5755dda2e195';
     atechIdentity.applicationKey = '2a9869df-7c90-3f32-0538-0bec6f4c4129';
-    atechIdentity.expiry = 1421159922;
-    atechIdentity.authHash = '3d919c5111e7597aa6e2a079337dc444df6e3c3f';
+    atechIdentity.expiry = 1421164753;
+    atechIdentity.authHash = 'e4a3840e3ae77dfd72ed9099f3cd0060990e2e4c';
     atechIdentity.getRemoteUserData();
     //]]>
 </script>
 
-<!--- Version 741d36, served by vdtapp-531-9150-c84123b028 -->
+<!--- Version b725e2, served by vdtapp-531-9156-bdb94a2da9 -->
 </body>
 </html>

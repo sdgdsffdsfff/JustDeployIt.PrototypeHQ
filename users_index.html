@@ -10,7 +10,7 @@
     <link href="/assets/css/application-4abd7d5764f0748a74fcf362045c3021.css" media="screen" rel="stylesheet" />
     <link href='/assets/images/favicon.png' rel='icon' style='image/png'>
 </head>
-<body class='js-projects-index'>
+<body class='js-users-index'>
 <div class='header'>
     <div class='header__inner'>
         <div class='container'>
@@ -21,7 +21,7 @@
                         <a class="main-menu__link" href="/"><img alt="Dashboard Icon" class="main-menu__icon" src="/assets/images/icon-dashboard-b7fc48923a8411a5354a81b66e34b692.svg" />
                             <span class='main-menu__text'>Dashboard</span>
                         </a></li>
-                    <li class='inline-list__item is-active main-menu__item'>
+                    <li class='inline-list__item main-menu__item'>
                         <a class="main-menu__link" href="/projects"><img alt="Projects Icon" class="main-menu__icon" src="/assets/images/icon-projects-f2e21fdd8c1a0dfc1b7e438396263705.svg" />
                             <span class='main-menu__text'>Projects</span>
                         </a></li>
@@ -29,7 +29,7 @@
                         <a class="main-menu__link" href="/account"><img alt="Account icon" class="main-menu__icon" src="/assets/images/icon-accounts-5573fc3b8b4b9b204d48ac0d24eb1799.svg" />
                             <span class='main-menu__text'>Account</span>
                         </a></li>
-                    <li class='inline-list__item main-menu__item'>
+                    <li class='inline-list__item is-active main-menu__item'>
                         <a class="main-menu__link" href="/users"><img alt="Users icon" class="main-menu__icon" src="/assets/images/icon-users-4d09e071ba1c6eed77353183a91a9e9c.svg" />
                             <span class='main-menu__text'>Users</span>
                         </a></li>
@@ -61,67 +61,41 @@
 
 <div class='container clearfix'>
 
-    <div class='flash flash--notice flash--spaced'>
-        <p class='flash__close'><a class="flash__close-link" data-dismiss=".flash" data-method="post" href="/users/3471e5ea-a920-5641-1ed9-16609e345521/hide_notice" rel="nofollow" title="Hide this message">Hide</a></p>
-        <h3 class='g-heading-gamma'>Deploy 2.0 is coming...</h3>
-        <p>We've been hard at work on the latest version of Deploy. Read about it here <a href='http://blog.atechmedia.com/introducing-deploy-2-0/'>on our blog</a> or get involved in the <a href='https://{{current_account}}.beta.deployhq.com'>open beta</a>.</p>
-    </div>
-    <div class='box section section--first section--with-create'>
-        <a class="button button--positive button--create section__create" href="/projects/new" title="Create a new project"><img alt="Icon add" class="button__icon" src="/assets/images/icon-add-e0280f31016ead5fa85f6969fbd6f2db.svg" /></a>
+    <div class='section section--first section--with-create box'>
         <div class='page-header'>
-            <h2 class='page-header__title g-heading-alpha'>Your Projects</h2>
+            <h2 class='page-header__title g-heading-alpha'>Users</h2>
             <p class='page-header__lead'>
-                The list below shows all the projects which are currently set up for this account.
-                Click on a project to view further details or select 'Deploy Now' to be taken straight to the new deployment screen.
+                You can configure unlimited users who will have access to your account to deploy your projects.
+                You can choose whether users have access to all projects or specify them on a per-project basis.
             </p>
         </div>
+        <a class="button button--positive button--create section__create" href="/users/new" title="Add a new user"><img alt="Icon add" class="button__icon" src="/assets/images/icon-add-e0280f31016ead5fa85f6969fbd6f2db.svg" /></a>
     </div>
-    <div class='clearfix'>
-        <form accept-charset="UTF-8" action="/users/3471e5ea-a920-5641-1ed9-16609e345521/projects_sort_preference" class="order-preference" id="user_project_sort" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="QFy+K8j0wqfIVSkkd89qe/QEo2wgm/4H1FtjcbzE47I=" /></div><div class='action-block clearfix'>
-            <div class='action-block__sort radio-block js-project-sort'>
-                <strong class='radio-block__label'>Sort:</strong>
-                <label class="radio-block__group" for="user_alphabetic_sort_true"><input class="radio-block__input" id="user_alphabetic_sort_true" name="user[alphabetic_sort]" type="radio" value="true" />
-                    <span>Alphabetically</span>
-                </label><label class="radio-block__group" for="user_alphabetic_sort_false"><input checked="checked" class="radio-block__input" id="user_alphabetic_sort_false" name="user[alphabetic_sort]" type="radio" value="false" />
-                <span>Recently Deployed</span>
-            </label></div>
-        </div>
-        </form>
-
-        <form accept-charset="UTF-8" action="/users/3471e5ea-a920-5641-1ed9-16609e345521/projects_view_preference" class="edit_user" id="user_project_view" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="QFy+K8j0wqfIVSkkd89qe/QEo2wgm/4H1FtjcbzE47I=" /></div><ul class='view-preference layout-list clearfix box'>
-            <li class='view-preference__item'>
-                <a class="view-preference__link  js-view-preference" href="#"><img alt="Icon list table" class="view-preference__icon" src="/assets/images/icon-list-table-1d3083531e7d60e4677a1f896aa3e3cb.svg" /></a>
-                <input class="is-hidden" id="user_compact_view_true" name="user[compact_view]" type="radio" value="true" />
-            </li>
-            <li class='view-preference__item'>
-                <a class="view-preference__link is-active js-view-preference" href="#"><img alt="Icon list block white" class="view-preference__icon" src="/assets/images/icon-list-block-white-f9dfb5ef9ca2d4b6f399d1e61e04c048.svg" /></a>
-                <input checked="checked" class="is-hidden" id="user_compact_view_false" name="user[compact_view]" type="radio" value="false" />
-            </li>
-        </ul>
-        </form>
-
+    <div class='section section--equal section--first box'>
+        <table class='table table--responsive'>
+            <thead>
+            <tr>
+                <td class='table__avatar-column'></td>
+                <td>Email Address</td>
+                <td>Name</td>
+                <td>Access</td>
+                <td></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class='table__avatar-column'>
+                    <img alt="shukai zhao&#39;s Gravatar" class="avatar-image" src="/assets/images/avatar.png" />
+                </td>
+                <td class='table__label' data-column-label='Email Address'>treetree1303@gmail.com</td>
+                <td class='table__label' data-column-label='Name'>shukai zhao</td>
+                <td class='table__before-empty table__label' data-column-label='Access'>Account Admin</td>
+                <td class='table__actions table__empty u-text-right'>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-    <ul class='project-listings layout-list clearfix js-project-list'>
-        <li class='project-listing js-project' data-last-deployed='1420966178' data-name='DeepPHPOOP'>
-            <div class='box'>
-                <h3 class='g-heading-beta project-listing__name'><a href="/projects/deepphpoop">DeepPHPOOP</a></h3>
-                <div class='project-listing__bar'>
-                    <div class='project-listing__deployments'>
-                        <span class='project-listing__count'>3</span>
-                        <span class='project-listing__count-title'>Deployments</span>
-                    </div>
-                    <div class='project-listing__servers'>
-                        <span class='project-listing__count'>1</span>
-                        <span class='project-listing__count-title'>Servers</span>
-                    </div>
-                    <div class='project-listing__deploy'>
-                        <a class="project-listing__deploy-button" href="/projects/deepphpoop/deployments/new">Deploy</a>
-                    </div>
-                </div>
-            </div>
-        </li>
-
-    </ul>
 
 </div>
 <div class='footer'>
@@ -168,7 +142,7 @@
                 <div class='feedback-bar__form'>
                     <h2 class='form-heading g-heading-gamma'>Report Bug</h2>
                     <form accept-charset="UTF-8" action="/feedback/report_bug" class="js-feedback" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QFy+K8j0wqfIVSkkd89qe/QEo2wgm/4H1FtjcbzE47I=" /></div>
-                        <input id="url" name="url" type="hidden" value="https://treetree.beta.deployhq.com/projects?action=index&amp;controller=projects" />
+                        <input id="url" name="url" type="hidden" value="https://treetree.beta.deployhq.com/users?action=index&amp;controller=users" />
                         <div class='form-group'>
                             <label class="form-label" for="description">Describe Problem</label>
 <textarea class="textarea" id="description" name="description" rows="6">
@@ -216,7 +190,7 @@
     Utility.RailsVars = {"user_timezone":"Etc/UTC","vwp_token":"13c9299896384ac5ac3cf68c"};
 
     (function() {
-        window.$this = new (App.Projects || App.Base)();
+        window.$this = new (App.Users || App.Base)();
         if (typeof $this.index === 'function') {
             return $this.index.call();
         }
@@ -231,12 +205,12 @@
     atechIdentity.host = 'http://pt.justdeployit.com';
     atechIdentity.userKey = '3b2662a4-843b-798f-417b-5755dda2e195';
     atechIdentity.applicationKey = '2a9869df-7c90-3f32-0538-0bec6f4c4129';
-    atechIdentity.expiry = 1421159698;
-    atechIdentity.authHash = 'f4e4c577928fb2de9432c3038e33d2e26c1135ef';
+    atechIdentity.expiry = 1421165029;
+    atechIdentity.authHash = 'a30ae36216dea60f011879049d957a32e2830d89';
     atechIdentity.getRemoteUserData();
     //]]>
 </script>
 
-<!--- Version 741d36, served by vdtapp-531-9150-c84123b028 -->
+<!--- Version b725e2, served by vdtapp-531-9156-bdb94a2da9 -->
 </body>
 </html>
