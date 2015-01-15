@@ -133,7 +133,10 @@
             }(this)), !0
         }, e.prototype.send = function (t, n) {
             var e;
-            return null == n && (n = {}), this.connected ? (e = JSON.stringify({event: t, data: n}), WebPush.log("[socket] Sending `" + e + "`"), this.connection.send(e), !0) : !1
+            return null == n && (n = {}), this.connected ? (e = JSON.stringify({
+                event: t,
+                data: n
+            }), WebPush.log("[socket] Sending `" + e + "`"), this.connection.send(e), !0) : !1
         }, e.prototype.startPinging = function () {
             return WebPush.log("[socket] Starting pinger"), this.pinger = setInterval(function (t) {
                 return function () {
@@ -170,7 +173,12 @@
             for (e in s)t = s[e], n[e] = t.signature;
             return WebPush.log("[ajaxpoll] Getting latest messages for channels:"), WebPush.log(n), WebPush.Util.ajax({
                 url: "" + this.constructor.host + "/messages",
-                params: {token: this.client.token, since: this.last_since, session_id: this.client.sessionID, channel: JSON.stringify(n)},
+                params: {
+                    token: this.client.token,
+                    since: this.last_since,
+                    session_id: this.client.sessionID,
+                    channel: JSON.stringify(n)
+                },
                 success: function (n) {
                     return function (s) {
                         var o, i, r, c, u, a, h, p, l;

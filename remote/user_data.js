@@ -13,9 +13,14 @@ atechIdentity.receiveUserData({
     "assignments": [{
         "account_identifier": "28288",
         "label": "treetree",
-        "url": "http://pt.justdeployit.com",
+        "url": "https://treetree.deployhq.com",
         "identifier": "ddff82bd-bc92-7660-64f0-4d0b1f4d48ea",
         "email_address": null,
-        "application": {"name": "Deploy", "identifier": "2a9869df-7c90-3f32-0538-0bec6f4c4129", "url": "http://pt.justdeployit.com", "colour": "#b0ca0d"}
+        "application": {
+            "name": "Deploy",
+            "identifier": "2a9869df-7c90-3f32-0538-0bec6f4c4129",
+            "url": "http://www.deployhq.com",
+            "colour": "#b0ca0d"
+        }
     }]
 })
