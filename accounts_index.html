@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="rwYdvFNriVW/enCpAsE868hALbxWxARkwvjTzoMRP3E=" name="csrf-token" />
+    <meta charset='utf-8'>
+    <meta content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1' name='viewport'>
+    <title>treetree - Deploy</title>
+    <link href="/assets/cloud.typography.com/7257492/624966/css/fonts.css" media="screen" rel="stylesheet" />
+    <link href="/assets/application-c2577e410b34fa9f4ea1e85a71113b0f.css" media="screen" rel="stylesheet" />
+    <link href='/images/favicon.png' rel='icon' style='image/png'>
+</head>
+<body class='js-accounts-edit'>
+<div class='header'>
+    <div class='header__inner'>
+        <div class='container'>
+            <h1 class='branding'><a href="/">Deploy</a></h1>
+            <nav class='main-menu'>
+                <ul class='inline-list'>
+                    <li class='inline-list__item main-menu__item'>
+                        <a class="main-menu__link" href="/"><img alt="Dashboard Icon" class="main-menu__icon" src="/assets/icon-dashboard-b7fc48923a8411a5354a81b66e34b692.svg" />
+                            <span class='main-menu__text'>Dashboard</span>
+                        </a></li>
+                    <li class='inline-list__item main-menu__item'>
+                        <a class="main-menu__link" href="/projects"><img alt="Projects Icon" class="main-menu__icon" src="/assets/icon-projects-f2e21fdd8c1a0dfc1b7e438396263705.svg" />
+                            <span class='main-menu__text'>Projects</span>
+                        </a></li>
+                    <li class='inline-list__item is-active main-menu__item'>
+                        <a class="main-menu__link" href="/account"><img alt="Account icon" class="main-menu__icon" src="/assets/icon-accounts-5573fc3b8b4b9b204d48ac0d24eb1799.svg" />
+                            <span class='main-menu__text'>Account</span>
+                        </a></li>
+                    <li class='inline-list__item main-menu__item'>
+                        <a class="main-menu__link" href="/users"><img alt="Users icon" class="main-menu__icon" src="/assets/icon-users-4d09e071ba1c6eed77353183a91a9e9c.svg" />
+                            <span class='main-menu__text'>Users</span>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class='user-menu'>
+                <a class="js-toggle-nav" href="#" rel="nofollow"><img alt="shukai zhao&#39;s Avatar" class="user-menu__icon avatar-image" src="/images/avatar.png" />
+                </a></div>
+        </div>
+    </div>
+    <nav class='nav js-nav is-hidden'>
+        <div class='nav__container container'>
+            <div class='box box--heavy user-menu-block'>
+                <ul class='block-list'>
+                    <li class='block-list__item'>
+                        <a class="block-list__link" href="http://support.deployhq.com/">Support</a>
+                    </li>
+                    <li class='block-list__item'>
+                        <a class="block-list__link" href="/profile">Profile</a>
+                    </li>
+                    <li class='block-list__item'>
+                        <a class="block-list__link" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class='container clearfix'>
+
+    <div class='box section section--first'>
+        <div class='page-header'>
+            <h2 class='page-header__title g-heading-alpha'>Account Administration</h2>
+            <p class='page-header__lead'>
+                As the account administrator, you are responsible for managing your Deploy account which includes all billing related aspects.
+                Use the form below to change the name of your account or select a new user to become the account administrator.
+            </p>
+        </div>
+    </div>
+    <div class='content--constrained'>
+        <form accept-charset="UTF-8" action="/account" class="edit_account" id="edit_account_28288" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="rwYdvFNriVW/enCpAsE868hALbxWxARkwvjTzoMRP3E=" /></div><div class='box section section--skinny section--first'>
+            <h3 class='form-heading g-heading-gamma'>Rename Account</h3>
+            <p class='form-paragraph'>Enter a new name for your account below.</p>
+            <div class='form-group'>
+                <input class="form-control" id="account_name" name="account[name]" type="text" value="treetree" />
+                <p class='form-hint'>
+                    This is the name which is displayed to users when logging into your account.
+                    Changing this will not affect the domain you use to access your account.
+                </p>
+            </div>
+            <h3 class='form-heading g-heading-gamma'>Deploy Domain</h3>
+            <p class='form-paragraph'>Enter a new domain for your account below.</p>
+            <div class='form-group'>
+                <input class="form-control form-control--inline u-text-right" id="account_permalink" name="account[permalink]" type="text" value="treetree" />
+                <strong>.beta.deployhq.com</strong>
+                <p class='form-hint'>You'll use this address to access your Deploy account.</p>
+            </div>
+        </div>
+            <div class='form-submit'>
+                <button class="button button--positive" name="button" type="submit">Save Changes</button>
+            </div>
+        </form>
+
+    </div>
+    <div class='sidebar'>
+        <div class='content-block'>
+            <h3 class='sidebar__heading g-heading-gamma'>Account Usage</h3>
+            <ul class='layout-list'>
+                <li class='icon-li icon-li__inner'>
+                    <img alt="Icon rocket" class="icon-li__img" src="/assets/icon-rocket-859fd58e80dff86a7fd4aaede1e919c3.svg" />
+<span>
+<strong>1  (out of 22) project</strong>
+</span>
+                </li>
+                <li class='icon-li icon-li__inner'>
+                    <img alt="Icon multiple users" class="icon-li__img" src="/assets/icon-multiple-users-227e1b467b622098e38ac9e0fea609a7.svg" />
+<span>
+<strong>2 users</strong>
+</span>
+                </li>
+            </ul>
+            <h3 class='sidebar__heading g-heading-gamma'>Billing &amp; Accounts</h3>
+            <p>The links below will direct you to our central billing centre.</p>
+            <ul class='layout-list'>
+                <li class='icon-li'>
+                    <a class="icon-li__inner text--link" href="/billing/cards"><img alt="Icon credit card" class="icon-li__img" src="/assets/icon-credit-card-a4e7e55fa0d488c0a24ada5af824e925.svg" />
+                        <span>Add/Update Payment Details</span>
+                    </a></li>
+                <li class='icon-li'>
+                    <a class="icon-li__inner text--link" href="/billing/paynow"><img alt="Icon cheque" class="icon-li__img" src="/assets/icon-cheque-d29399ab52f220cca21db5b24f1b0edd.svg" />
+                        <span>Make a Payment</span>
+                    </a></li>
+                <li class='icon-li'>
+                    <a class="icon-li__inner text--link" href="/billing/contact"><img alt="Icon mailbox" class="icon-li__img" src="/assets/icon-mailbox-823ada60ba78b8820f5bf01525253000.svg" />
+                        <span>Change Contact Details</span>
+                    </a></li>
+                <li class='icon-li'>
+                    <a class="icon-li__inner text--link" href="/billing/invoices"><img alt="Icon document" class="icon-li__img" src="/assets/icon-document-9a18e3de54067657f575ce1e01a2a3c8.svg" />
+                        <spanView>Invoices</spanView>
+                    </a></li>
+                <li class='icon-li'>
+                    <a class="icon-li__inner text--link" href="/billing/dashboard"><img alt="Icon centre" class="icon-li__img" src="/assets/icon-centre-bb8bdc15b00586562166e3839b0b3d7c.svg" />
+                        <span>Billing Centre</span>
+                    </a></li>
+            </ul>
+            <h3 class='sidebar__heading g-heading-gamma'>Account Package</h3>
+            <ul class='layout-list'>
+                <li class='icon-li'>
+                    <a class="icon-li__inner text--link text--positive" href="/billing/package"><img alt="Icon upgrade" class="icon-li__img" src="/assets/icon-upgrade-cd8b19979e8d57719865c263cc199e4c.svg" />
+                        <span>Upgrade/Downgrade</span>
+                    </a></li>
+                <li class='icon-li'>
+                    <a class="icon-li__inner text--link text--negative" href="/billing/cancel"><img alt="Icon cancel" class="icon-li__img" src="/assets/icon-cancel-408669aa013831c84b172d9a478a5168.svg" />
+                        <span>Cancel Account</span>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class='footer'>
+    <div class='container'>
+        <div class='row'>
+            <div class='column column--quarter'>
+                <h5 class='footer-heading g-heading-gamma'>About</h5>
+                <ul class='footer-links'>
+                    <li class='footer-links__item'><a href="http://deployhq.com">Website</a></li>
+                    <li class='footer-links__item'><a href="http://deployhq.com/terms">Terms &amp; Conditions</a></li>
+                    <li class='footer-links__item'><a href="http://deployhq.com/privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class='column column--quarter'>
+                <h5 class='footer-heading g-heading-gamma'>Support</h5>
+                <ul class='footer-links'>
+                    <li class='footer-links__item'><a href="http://support.deployhq.com/">Help &amp; Support</a></li>
+                    <li class='footer-links__item'><a href="http://twitter.com/deployhq">Twitter</a></li>
+                    <li class='footer-links__item'><a href="https://community.atechmedia.com/" target="_blank">Community</a></li>
+                    <li class='footer-links__item'><a href="http://status.atechmedia.com">Service Status</a></li>
+                </ul>
+            </div>
+            <div class='column column--quarter'>
+                <h5 class='footer-heading g-heading-gamma'>Products</h5>
+                <ul class='footer-links'>
+                    <li class='footer-links__item'><a href="https://www.codebasehq.com" target="_blank">Codebase</a></li>
+                    <li class='footer-links__item'><a href="https://sirportly.com/" target="_blank">Sirportly</a></li>
+                    <li class='footer-links__item'><a href="https://viaduct.io/" target="_blank">Viaduct</a></li>
+                </ul>
+            </div>
+            <div class='column column--quarter'>
+                <a class="footer__branding" href="http://atechmedia.com"><img alt="Atechmedia logo" src="/assets/atechmedia-logo-0c4d3f231c616ea3edec833d64afb407.png" /></a>
+            </div>
+        </div>
+        <p class='footer__copyright'>&copy; 2015 <a href="http://atechmedia.com">aTech Media Limited</a>. All rights reserved.</p>
+    </div>
+</div>
+
+<div class='feedback-bar'>
+    <div class='container'>
+        <ul class='feedback-list'>
+            <li class='feedback-list__item'>
+                <a class="feedback-list__link js-feedback-form" href="#">Report Bug</a>
+                <div class='feedback-bar__form'>
+                    <h2 class='form-heading g-heading-gamma'>Report Bug</h2>
+                    <form accept-charset="UTF-8" action="/feedback/report_bug" class="js-feedback" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rwYdvFNriVW/enCpAsE868hALbxWxARkwvjTzoMRP3E=" /></div>
+                        <input id="url" name="url" type="hidden" value="https://treetree.beta.deployhq.com/account?action=edit&amp;controller=accounts" />
+                        <div class='form-group'>
+                            <label class="form-label" for="description">Describe Problem</label>
+<textarea class="textarea" id="description" name="description" rows="6">
+</textarea>
+                            <p class='form-hint'>Please describe the bug you are experiencing.</p>
+                        </div>
+                        <div class='form-group'>
+                            <label class="form-label" for="browser">Browser</label>
+                            <input class="form-control" id="browser" name="browser" type="text" />
+                            <p class='form-hint'>What browser and browser version are you using?</p>
+                        </div>
+                        <button class="button button--positive button--small" name="button" type="Submit">Send</button>
+                    </form>
+
+                </div>
+            </li>
+            <li class='feedback-list__item'>
+                <a class="feedback-list__link js-feedback-form" href="#">Feedback</a>
+                <div class='feedback-bar__form'>
+                    <h2 class='form-heading g-heading-gamma'>Submit Feedback</h2>
+                    <form accept-charset="UTF-8" action="/feedback/feedback" class="js-feedback" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rwYdvFNriVW/enCpAsE868hALbxWxARkwvjTzoMRP3E=" /></div>
+                        <div class='form-group'>
+                            <label class="form-label" for="summary">What do you think?</label>
+<textarea class="textarea" id="description" name="description" rows="6">
+</textarea>
+                        </div>
+                        <button class="button button--positive button--small" name="button" type="Submit">Send</button>
+                    </form>
+
+                </div>
+            </li>
+        </ul>
+        <p class='feedback-paragraph'>
+            You are currently using the beta version of Deploy.
+            <a href="https://treetree.deployhq.com/">Use the stable version →</a>
+        </p>
+    </div>
+</div>
+
+<script src="/assets/cdn.viaduct.io/webpush.js"></script>
+<script src="/assets/application-4490436fc5ec79a05e570d20adf462b5.js"></script>
+<script>
+    //<![CDATA[
+    window.Utility || (window.Utility = {});
+    Utility.RailsVars = {"user_timezone":"Etc/UTC","vwp_token":"13c9299896384ac5ac3cf68c"};
+
+    (function() {
+        window.$this = new (App.Accounts || App.Base)();
+        if (typeof $this.edit === 'function') {
+            return $this.edit.call();
+        }
+    })();
+
+    //]]>
+</script>
+<script src='/assets/identity.atechmedia.com/javascripts/remote.js' type='text/javascript'></script>
+<script>
+    //<![CDATA[
+    var atechIdentity = new AtechIdentity();
+    atechIdentity.host = 'http://pt.justdeployit.com';
+    atechIdentity.userKey = '3b2662a4-843b-798f-417b-5755dda2e195';
+    atechIdentity.applicationKey = '2a9869df-7c90-3f32-0538-0bec6f4c4129';
+    atechIdentity.expiry = 1421385780;
+    atechIdentity.authHash = '84d95cdd266cb303864c22d1cf7c26fce70cc0f1';
+    atechIdentity.getRemoteUserData();
+    //]]>
+</script>
+
+<!--- Version 4f2bf0, served by vdtapp-531-9175-535458ff20 -->
+</body>
+</html>
