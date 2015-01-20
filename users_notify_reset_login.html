@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - aTech Media</title>
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="qeRJHaG06nM5QzfZroChzYoFPA2j5b1s9kFkQ9FUuVc=" name="csrf-token" />
+    <link href='/assets/identity.atechmedia.com/application.css' rel='stylesheet' type='text/css'>
+    <script src='/assets/identity.atechmedia.com/application.js' type='text/javascript'></script>
+    <link href='/favicon.png' rel='icon' style='image/png'>
+</head>
+<body class=' production'>
+<div id='content'>
+    <h2 class='intro'>Login to your <b>aTech Media</b> account.</h2>
+    <p class='intro'>
+        If you have an account with any aTech Media service you can login using your e-mail address
+        password. Once logged in you will be able to manage your account as well as access any of
+        your services at the click of a button.
+    </p>
+    <div id="flash-notice"><p>We have sent an email to the default e-mail address stored on this account</p></div>
+    <form accept-charset="UTF-8" action="/login" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="qeRJHaG06nM5QzfZroChzYoFPA2j5b1s9kFkQ9FUuVc=" /></div>
+        <fieldset class=""><ul>
+            <li class='email'>
+                <p class='label'><label for="username">E-Mail Address / Username</label></p>
+                <p class='field'><input class="focus" id="username" name="username" tabindex="1" type="text" /></p>
+                <p class='text remember'>
+                    <input id="remember" name="remember" type="checkbox" value="1" />
+                    <label for='remember'>Remember my login on this computer?</label>
+                    <a href="#">(What&#x27;s this?)</a>
+                </p>
+            </li>
+            <li class='password'>
+                <p class='label'><label for="password">Password</label></p>
+                <p class='field'><input id="password" name="password" tabindex="2" type="password" /></p>
+                <p class='text reset'><a href="/forgotten">Need to reset your password?</a></p>
+            </li>
+        </ul>
+        </fieldset><p class='remember-password-text'>
+            If you select this box we will add a cookie on your computer which will allow you to automatically
+            login to your identity account without entering a username & password. Please remember, anyone with
+            access to your local cookie store will also be able to login to your account. <b>Do not use this functionality
+            on public or un-trusted computers.</b> You can clear any remembered logins by clicking logout on any computer.
+        </p>
+        <p class='submit'>
+            <input class="button green" name="commit" tabindex="3" type="submit" value="Login to my account" />
+            <span>or <a href="/signup">create a new account</a></span>
+        </p>
+    </form>
+
+
+</div>
+<div id='footer'>
+    <p class='meta'>
+        <b>&copy; 2015 aTech Media Limited.</b>
+    </p>
+    <p class='meta'>
+        This is our single sign on system allowing you to login to any of our web applications
+        with a single set of credentials.  If you have any problems or questions, please <a href="mailto:support@codebasehq.com">contact our support team</a>.
+    </p>
+</div>
+<!--- Revision:  54d12e6 (Wed, 10 Dec 2014 10:16:20 +0000)  Environment: production -->
+<!--- Visiting from: 111.203.133.11 (111.203.133.11) -->
+</body>
+</html>

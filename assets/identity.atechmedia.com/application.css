@@ -1,0 +1,1586 @@
+/* line 1, ../../app/assets/stylesheets/_reset.scss */
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/* line 2, ../../app/assets/stylesheets/_reset.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 3, ../../app/assets/stylesheets/_reset.scss */
+li {
+  list-style: none;
+}
+
+/* line 4, ../../app/assets/stylesheets/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 5, ../../app/assets/stylesheets/_reset.scss */
+pre, form {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 6, ../../app/assets/stylesheets/_reset.scss */
+fieldset {
+  border: 0;
+}
+
+/* line 7, ../../app/assets/stylesheets/_reset.scss */
+legend {
+  color: #000;
+}
+
+/* line 8, ../../app/assets/stylesheets/_reset.scss */
+input, textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+
+/* line 9, ../../app/assets/stylesheets/_reset.scss */
+p, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../../app/assets/stylesheets/_reset.scss */
+th {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 11, ../../app/assets/stylesheets/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 12, ../../app/assets/stylesheets/_reset.scss */
+img {
+  border: 0;
+}
+
+/* line 13, ../../app/assets/stylesheets/_reset.scss */
+address {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 14, ../../app/assets/stylesheets/_reset.scss */
+caption {
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 15, ../../app/assets/stylesheets/_reset.scss */
+cite, dfn, em, strong, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 16, ../../app/assets/stylesheets/_reset.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 17, ../../app/assets/stylesheets/_reset.scss */
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 18, ../../app/assets/stylesheets/_reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 19, ../../app/assets/stylesheets/_reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 20, ../../app/assets/stylesheets/_reset.scss */
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+
+/* line 22, ../../app/assets/stylesheets/_reset.scss */
+.hidden {
+  display: none !important;
+}
+
+/* disable safari input highlighting - we don't like this */
+/* line 25, ../../app/assets/stylesheets/_reset.scss */
+input, textarea {
+  outline-style: none;
+  outline-width: 0px;
+}
+
+/* line 26, ../../app/assets/stylesheets/_reset.scss */
+a:active {
+  outline: none;
+}
+
+/* line 6, ../../app/assets/stylesheets/application.css.scss */
+html {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #efefef;
+}
+
+/* line 7, ../../app/assets/stylesheets/application.css.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #efefef repeat-x;
+  min-height: 400px;
+}
+
+/* line 9, ../../app/assets/stylesheets/application.css.scss */
+#content {
+  background: white no-repeat;
+  width: 750px;
+  margin: 50px auto 25px auto;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/* line 11, ../../app/assets/stylesheets/application.css.scss */
+#content h2.intro, #content h1 {
+  font-size: 130%;
+  font-weight: normal;
+  color: #000;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding-left: 90px;
+  margin-top: 35px;
+}
+
+/* line 12, ../../app/assets/stylesheets/application.css.scss */
+#content h2.intro mark, #content h1 mark {
+  background: #ffffde;
+  font-weight: 500;
+}
+
+/* line 13, ../../app/assets/stylesheets/application.css.scss */
+#content h2.intro.heading, #content h1 {
+  font-weight: bold;
+  font-size: 160%;
+}
+
+/* line 14, ../../app/assets/stylesheets/application.css.scss */
+#content p.intro {
+  font-size: 120%;
+  padding-left: 90px;
+  color: #777;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding-right: 25px;
+}
+
+/* line 15, ../../app/assets/stylesheets/application.css.scss */
+#content p.submit {
+  padding-left: 90px;
+  margin-bottom: 25px;
+}
+/* line 18, ../../app/assets/stylesheets/application.css.scss */
+#content p.submit input {
+  font-size: 110%;
+}
+/* line 19, ../../app/assets/stylesheets/application.css.scss */
+#content p.submit .button {
+  margin-right: 5px;
+}
+/* line 20, ../../app/assets/stylesheets/application.css.scss */
+#content p.submit a {
+  color: #666;
+}
+/* line 21, ../../app/assets/stylesheets/application.css.scss */
+#content p.submit span {
+  font-size: 120%;
+  margin-left: 5px;
+  color: #666;
+}
+
+/* line 23, ../../app/assets/stylesheets/application.css.scss */
+#content ul.scopes {
+  font-size: 120%;
+  padding-left: 90px;
+  color: #777;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding-right: 25px;
+}
+/* line 25, ../../app/assets/stylesheets/application.css.scss */
+#content ul.scopes li {
+  list-style: disc;
+  margin-left: 25px;
+}
+/* line 26, ../../app/assets/stylesheets/application.css.scss */
+#content ul.scopes.authorized {
+  color: #528d2e;
+}
+/* line 27, ../../app/assets/stylesheets/application.css.scss */
+#content ul.scopes.unauthorized {
+  color: #dc2828;
+}
+
+/* line 30, ../../app/assets/stylesheets/application.css.scss */
+#content p.help {
+  padding-left: 90px;
+  padding-right: 25px;
+  margin: 25px 0;
+  line-height: 1.5;
+  color: #666;
+  font-size: 110%;
+}
+/* line 37, ../../app/assets/stylesheets/application.css.scss */
+#content p.help a {
+  color: #666;
+}
+
+/* line 39, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset {
+  margin: 0px 0;
+  border-top: 1px solid #efefef;
+  padding: 20px 35px;
+  padding-left: 90px;
+  background: url(/assets/icons/keys.png) no-repeat 35px 20px;
+}
+/* line 45, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset h3 {
+  font-size: 130%;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #111;
+}
+/* line 47, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li {
+  width: 50%;
+  float: left;
+}
+/* line 49, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li p.label {
+  font-size: 120%;
+  color: #555;
+  margin-bottom: 10px;
+}
+/* line 50, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li p.field input {
+  font-size: 170%;
+  border: 1px solid #e2e9eb;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  padding: 8px;
+  width: 88%;
+  background: #f8fafb;
+}
+/* line 51, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li p.field input:focus {
+  border-color: #b8d2db;
+  -moz-box-shadow: 0 0 8px #c6dde5;
+  -webkit-box-shadow: 0 0 8px #c6dde5;
+  box-shadow: 0 0 8px #c6dde5;
+}
+/* line 52, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li p.field input.ok {
+  background-image: url(/assets/signup/tick.png);
+  background-repeat: no-repeat;
+  background-position: 95% 10px;
+}
+/* line 53, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li p.field input.error {
+  background-image: url(/assets/signup/cross.png);
+  background-repeat: no-repeat;
+  background-position: 95% 10px;
+}
+/* line 54, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li p.text {
+  margin-top: 15px;
+}
+/* line 55, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li p.text a {
+  color: #999;
+}
+/* line 56, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li p.text.remember input {
+  float: left;
+  margin-right: 5px;
+}
+/* line 58, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li.email {
+  width: 65%;
+}
+/* line 59, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li.email-full {
+  width: 100%;
+}
+/* line 60, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li.password {
+  width: 35%;
+}
+/* line 61, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul li.oauth-application {
+  width: 100%;
+}
+/* line 63, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul.margined li {
+  margin-bottom: 15px;
+}
+/* line 64, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul.full {
+  font-size: 110%;
+}
+/* line 66, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul.full li {
+  float: none;
+  width: 100%;
+}
+/* line 67, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul.full li input {
+  float: left;
+  margin-top: 2px;
+}
+/* line 68, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul.full li label {
+  margin-left: 20px;
+}
+/* line 71, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset ul.clear {
+  clear: both;
+}
+/* line 75, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset p.choose-username {
+  color: #666;
+  line-height: 1.5;
+}
+/* line 78, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset p.choose-username a {
+  color: inherit;
+}
+/* line 81, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.no-border {
+  border-top: 0;
+}
+/* line 82, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.email {
+  background-image: url(/assets/icons/mailbox.png);
+}
+/* line 83, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.password {
+  background-image: url(/assets/icons/security.png);
+}
+/* line 84, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.username {
+  background-image: url(/assets/icons/security.png);
+}
+/* line 86, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.username ul {
+  display: none;
+}
+/* line 88, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.preferences {
+  background-image: url(/assets/icons/preferences.png);
+}
+/* line 89, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.name {
+  background-image: url(/assets/icons/person.png);
+}
+/* line 91, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.name ul {
+  margin-bottom: 10px;
+}
+/* line 92, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.name ul li p.avatar {
+  padding-top: 5px;
+}
+/* line 93, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.name ul li p.avatar img {
+  float: left;
+  margin-right: 10px;
+  margin-top: -8px;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+/* line 94, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.name ul li p.avatar a {
+  color: #333;
+}
+/* line 97, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor {
+  border-top: 0;
+  padding-top: 10px;
+  background-position: 35px 10px;
+  background-image: url(/assets/icons/guide.png);
+}
+/* line 101, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor p {
+  line-height: 1.5;
+  font-size: 110%;
+  margin: 15px 0;
+}
+/* line 102, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor p.qr {
+  float: right;
+  margin: 0;
+  line-height: 1.5;
+  margin-left: 50px;
+}
+/* line 103, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor p.stop {
+  margin-top: 20px;
+}
+/* line 104, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor p.stop a {
+  background: #ddd;
+  padding: 2px 6px;
+  display: inline-block;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  color: #666;
+  text-decoration: none;
+  font-size: 90%;
+}
+/* line 105, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor p.stop a:hover {
+  background: #CB3026;
+  color: #fff;
+}
+/* line 106, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor ul.options {
+  margin-top: 25px;
+}
+/* line 107, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor ul.options h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+/* line 108, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor ul.options h3 a {
+  color: #BE350A;
+  text-decoration: none;
+  font-size: 100%;
+}
+/* line 109, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor ul.options h3 a:hover {
+  text-decoration: underline;
+}
+/* line 110, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor ul.options p {
+  padding-right: 15px;
+  color: #aaa;
+  margin-top: 5px;
+}
+/* line 111, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor dl {
+  background: #f7f7f7;
+  padding: 15px;
+  border-left: 1px solid #ccc;
+}
+/* line 112, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor dl dd:last-child {
+  margin-bottom: 0;
+}
+/* line 113, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor p.error {
+  background: #ffe6e6;
+  padding: 10px;
+  color: #d50707;
+  margin-top: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+/* line 114, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor p.error a {
+  color: inherit;
+}
+/* line 115, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor ul.details {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+/* line 116, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor ul.details li {
+  float: none;
+}
+/* line 119, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.two_factor.yubikey p.submit {
+  display: none;
+}
+/* line 121, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message {
+  background-image: url(/assets/icons/guide.png);
+}
+/* line 123, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message p.text {
+  line-height: 1.5;
+  margin: 15px 0;
+  font-size: 110%;
+}
+/* line 124, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message p.text span.disabled {
+  color: red;
+}
+/* line 125, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message p.text span.enabled {
+  color: #28A41B;
+}
+/* line 126, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message p.go {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 90%;
+}
+/* line 127, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message p.go a {
+  padding: 4px 10px;
+}
+/* line 129, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message.authed-apps {
+  background-image: url(/assets/icons/authed-apps.png);
+}
+/* line 130, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message.apps {
+  background-image: url(/assets/icons/apps.png);
+}
+/* line 133, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.message.security {
+  background-image: url(/assets/icons/question.png);
+}
+
+/* line 139, ../../app/assets/stylesheets/application.css.scss */
+#content .errorExplanation {
+  margin-left: 90px;
+  color: red;
+  line-height: 1.5;
+}
+/* line 143, ../../app/assets/stylesheets/application.css.scss */
+#content .errorExplanation h2 {
+  font-size: 120%;
+  font-weight: 500;
+}
+/* line 144, ../../app/assets/stylesheets/application.css.scss */
+#content .errorExplanation p {
+  display: none;
+}
+/* line 145, ../../app/assets/stylesheets/application.css.scss */
+#content .errorExplanation ul {
+  margin-top: 6px;
+}
+/* line 146, ../../app/assets/stylesheets/application.css.scss */
+#content .errorExplanation ul li {
+  list-style: disc;
+  margin-left: 15px;
+}
+
+/* line 149, ../../app/assets/stylesheets/application.css.scss */
+#content ul.nav {
+  margin-bottom: 15px;
+  background: #efefef;
+  padding: 5px 0;
+  padding-left: 90px;
+  overflow: hidden;
+}
+/* line 155, ../../app/assets/stylesheets/application.css.scss */
+#content ul.nav li {
+  float: left;
+  margin-right: 10px;
+}
+/* line 158, ../../app/assets/stylesheets/application.css.scss */
+#content ul.nav li a {
+  padding: 3px 6px;
+  display: block;
+  color: #555;
+  text-decoration: none;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+/* line 166, ../../app/assets/stylesheets/application.css.scss */
+#content ul.nav li a:hover {
+  background: #F5F5F5;
+  border: 1px solid #ccc;
+}
+/* line 170, ../../app/assets/stylesheets/application.css.scss */
+#content ul.nav li a.active {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+/* line 177, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form {
+  margin-left: 90px;
+  margin-top: 35px;
+  margin-right: 25px;
+}
+/* line 181, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form p.avatar-select {
+  margin-left: 145px;
+  margin-bottom: 20px;
+}
+/* line 182, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type {
+  display: none;
+  background: #f7f7f7;
+  margin: 10px 0;
+  padding: 15px;
+  overflow: hidden;
+}
+/* line 188, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type .preview {
+  float: left;
+  width: 130px;
+  text-align: center;
+}
+/* line 189, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type .preview img {
+  width: 64px;
+  height: 64px;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 2px;
+}
+/* line 190, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type .preview a {
+  color: #999;
+  margin-top: 6px;
+  display: inline-block;
+  font-size: 90%;
+}
+/* line 191, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type .preview a:hover {
+  color: #333;
+}
+/* line 192, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type .details {
+  margin-left: 135px;
+}
+/* line 193, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type .details ul {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 90%;
+  color: #777;
+}
+/* line 194, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type .details ul li {
+  list-style: square;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+/* line 195, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form ul.avatar-types li.type .details ul li a {
+  color: #777;
+}
+/* line 197, ../../app/assets/stylesheets/application.css.scss */
+#content form.avatar-form p.submit {
+  padding-left: 145px;
+  margin-top: 20px;
+}
+
+/* line 200, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper {
+  padding-left: 90px;
+  background: url(/assets/icons/mailbox.png) no-repeat 35px 5px;
+}
+/* line 203, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper p.new {
+  margin: 15px 0;
+  margin-bottom: 35px;
+}
+/* line 206, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper p.new a {
+  font-size: 100%;
+  padding: 3px 10px;
+}
+/* line 208, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses {
+  width: 98%;
+  margin: 25px 0;
+}
+/* line 211, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+/* line 212, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses td a {
+  color: #333;
+}
+/* line 213, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses td span.verified {
+  font-size: 90%;
+  color: green;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+/* line 214, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses td span.verified.not {
+  color: red;
+}
+/* line 215, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses td.verified a {
+  font-size: 90%;
+}
+/* line 216, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses td.address {
+  font-size: 120%;
+}
+/* line 217, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses thead td {
+  background: none;
+  color: #777;
+  font-size: 90%;
+  border: 0;
+  padding: 5px 11px;
+}
+/* line 218, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses tr.default td {
+  background: #ffffee;
+}
+/* line 219, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses tr td.opts {
+  text-align: center;
+}
+/* line 220, ../../app/assets/stylesheets/application.css.scss */
+#content .email-wrapper table.addresses tr td.opts img {
+  margin: 0 3px;
+}
+
+/* line 224, ../../app/assets/stylesheets/application.css.scss */
+#content p.remember-password-text {
+  background: #efefef;
+  margin: 0 0 15px 0;
+  margin-left: 90px;
+  margin-right: 30px;
+  padding: 10px;
+  line-height: 1.5;
+  color: #666;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  display: none;
+}
+
+/* line 236, ../../app/assets/stylesheets/application.css.scss */
+#content div#flash-alert {
+  border-top: 1px solid #efefef;
+  min-height: 30px;
+  color: red;
+  font-weight: 500;
+  font-size: 110%;
+  line-height: 1.5;
+  padding: 15px 60px 15px 90px;
+  background: url(/assets/icons/sad.png) #fff9f9 no-repeat 35px 15px;
+}
+
+/* line 245, ../../app/assets/stylesheets/application.css.scss */
+#content div#flash-notice {
+  border-top: 1px solid #efefef;
+  min-height: 30px;
+  color: #7ba30f;
+  font-weight: 500;
+  font-size: 110%;
+  line-height: 1.5;
+  padding: 15px 60px 15px 90px;
+  background: url(/assets/icons/happy.png) #f9ffef no-repeat 35px 15px;
+}
+
+/* line 255, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper p.no-data {
+  font-size: 120%;
+  color: #999;
+  font-style: italic;
+}
+/* line 256, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper p.new {
+  margin: 15px 0;
+}
+/* line 258, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper p.new a {
+  font-size: 100%;
+  padding: 3px 10px;
+}
+/* line 262, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper dl dt {
+  float: left;
+  width: 130px;
+  color: #333;
+  text-align: right;
+  font-weight: bold;
+}
+/* line 263, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper dl dd {
+  margin-left: 140px;
+  margin-bottom: 10px;
+  padding-top: 1px;
+}
+/* line 264, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper dl dd span.info {
+  display: block;
+  margin-top: 7px;
+  color: #996633;
+  font-size: 90%;
+  background: url(/assets/icons/info.gif) no-repeat;
+  padding: 0px 0;
+  padding-left: 23px;
+  line-height: 1.5;
+}
+/* line 265, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper dl dd span.info.hidden {
+  display: none;
+}
+/* line 266, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper dl dd a {
+  color: #666;
+}
+/* line 267, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper dl dd a#regenerate-oauth-client-secret {
+  font-size: 90%;
+}
+/* line 268, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper p.dl-submit {
+  margin-left: 140px;
+  padding: 4px 0;
+}
+/* line 271, ../../app/assets/stylesheets/application.css.scss */
+#content fieldset.oauth-wrapper p.dl-submit a {
+  font-size: 100%;
+  padding: 3px 10px;
+}
+
+/* line 275, ../../app/assets/stylesheets/application.css.scss */
+#content table.applications {
+  margin: 25px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 276, ../../app/assets/stylesheets/application.css.scss */
+#content table.applications td {
+  margin-bottom: 15px;
+  vertical-align: top;
+  width: 50%;
+}
+
+/* line 277, ../../app/assets/stylesheets/application.css.scss */
+#content table.applications td h4 {
+  font-weight: bold;
+  font-size: 120%;
+  margin-top: 10px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #efefef;
+  color: #555;
+}
+
+/* line 278, ../../app/assets/stylesheets/application.css.scss */
+#content table.applications td h4 img {
+  float: left;
+  margin-right: 6px;
+}
+
+/* line 279, ../../app/assets/stylesheets/application.css.scss */
+#content table.applications td p.desc {
+  color: #888;
+  font-size: 90%;
+  margin: 6px 0;
+  line-height: 1.4;
+  padding-left: 24px;
+}
+
+/* line 280, ../../app/assets/stylesheets/application.css.scss */
+#content table.applications td ul.assignments {
+  margin: 10px 0;
+  margin-left: 5px;
+  line-height: 1.6;
+}
+
+/* line 281, ../../app/assets/stylesheets/application.css.scss */
+#content table.applications td ul.assignments li {
+  background: url(/assets/icons/app.png) no-repeat 0 1px;
+  padding-left: 20px;
+}
+
+/* line 282, ../../app/assets/stylesheets/application.css.scss */
+#content table.applications td ul.assignments li a {
+  color: #333;
+}
+
+/* line 284, ../../app/assets/stylesheets/application.css.scss */
+#content div.application-wrapper {
+  padding-left: 90px;
+  min-height: 150px;
+  background: url(/assets/icons/packages.png) no-repeat 35px 6px;
+}
+/* line 288, ../../app/assets/stylesheets/application.css.scss */
+#content div.application-wrapper p.no-data {
+  text-align: center;
+  font-size: 120%;
+  color: #999;
+  font-style: italic;
+  padding-top: 50px;
+}
+
+/* line 291, ../../app/assets/stylesheets/application.css.scss */
+#footer {
+  width: 750px;
+  margin: auto;
+  font-size: 90%;
+  line-height: 1.7;
+  color: #999;
+  background: url(/assets/icons/am.png) no-repeat 20px 3px;
+}
+/* line 298, ../../app/assets/stylesheets/application.css.scss */
+#footer p {
+  margin-left: 90px;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
+/* line 299, ../../app/assets/stylesheets/application.css.scss */
+#footer p a {
+  color: #999;
+}
+
+/* line 302, ../../app/assets/stylesheets/application.css.scss */
+#header {
+  margin: auto;
+  margin-bottom: 40px;
+  font-size: 90%;
+  color: #666;
+  line-height: 1.8;
+  border-bottom: 1px solid #ccc;
+  background: #fffeee;
+}
+
+/* line 303, ../../app/assets/stylesheets/application.css.scss */
+#header a {
+  color: #666;
+  padding: 2px 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+/* line 304, ../../app/assets/stylesheets/application.css.scss */
+#header a:hover {
+  background: #999;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 305, ../../app/assets/stylesheets/application.css.scss */
+#header ul {
+  text-align: center;
+  padding: 4px 10px;
+  margin-left: 24px;
+  margin: auto;
+}
+
+/* line 306, ../../app/assets/stylesheets/application.css.scss */
+#header ul li {
+  display: inline;
+  border-right: 1px solid #bbb;
+  padding-right: 6px;
+  margin-right: 6px;
+}
+
+/* line 307, ../../app/assets/stylesheets/application.css.scss */
+#header ul li:last-child {
+  border-right: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* line 308, ../../app/assets/stylesheets/application.css.scss */
+#header ul li.title {
+  border: 0;
+  font-weight: bold;
+  padding-right: 0;
+}
+
+/* line 313, ../../app/assets/stylesheets/application.css.scss */
+a.button, input.button {
+  background-color: #333333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#777777), to(#333333));
+  background-image: -moz-linear-gradient(top, #777777, #333333);
+  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-size: 120%;
+  border: 1px solid #444;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+  -moz-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+/* line 326, ../../app/assets/stylesheets/application.css.scss */
+a.button:hover, input.button:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 327, ../../app/assets/stylesheets/application.css.scss */
+a.button:active, input.button:active {
+  background-color: #777777;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#777777));
+  background-image: -moz-linear-gradient(top, #333333, #777777);
+}
+
+/* line 330, ../../app/assets/stylesheets/application.css.scss */
+a.button.green, input.button.green {
+  background-color: #62a036;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8cbd4b), to(#62a036));
+  background-image: -moz-linear-gradient(top, #8cbd4b, #62a036);
+  border: 1px solid #528d2e;
+}
+/* line 333, ../../app/assets/stylesheets/application.css.scss */
+a.button.green:active, input.button.green:active {
+  background-color: #8cbd4b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62a036), to(#8cbd4b));
+  background-image: -moz-linear-gradient(top, #62a036, #8cbd4b);
+}
+
+/* line 337, ../../app/assets/stylesheets/application.css.scss */
+.admin-page {
+  margin: 20px;
+  margin-left: 90px;
+}
+/* line 340, ../../app/assets/stylesheets/application.css.scss */
+.admin-page p.new {
+  margin: 25px 0;
+}
+/* line 341, ../../app/assets/stylesheets/application.css.scss */
+.admin-page ul.list {
+  line-height: 1.5;
+  font-size: 120%;
+}
+/* line 344, ../../app/assets/stylesheets/application.css.scss */
+.admin-page ul.list li {
+  list-style: disc;
+  margin-left: 25px;
+}
+/* line 345, ../../app/assets/stylesheets/application.css.scss */
+.admin-page ul.list a {
+  color: #333;
+}
+/* line 347, ../../app/assets/stylesheets/application.css.scss */
+.admin-page h3 {
+  font-size: 120%;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+/* line 350, ../../app/assets/stylesheets/application.css.scss */
+#content form p.dl-submit {
+  margin-left: 140px;
+}
+
+/* line 351, ../../app/assets/stylesheets/application.css.scss */
+#content form p.dl-submit input {
+  font-size: 100%;
+  padding: 4px 10px;
+}
+
+/* line 353, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dt {
+  float: left;
+  width: 130px;
+  padding-top: 5px;
+  color: #333;
+  text-align: right;
+}
+
+/* line 354, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd {
+  margin-left: 140px;
+  margin-bottom: 10px;
+}
+
+/* line 355, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd span {
+  display: block;
+  margin-top: 7px;
+  color: #996633;
+  font-size: 90%;
+  background: url(/assets/icons/alert.gif) no-repeat;
+  padding: 0px 0;
+  padding-left: 23px;
+  line-height: 1.5;
+}
+
+/* line 356, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd span.info {
+  background-image: url(/assets/icons/info.gif);
+}
+
+/* line 357, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd span.blue-info {
+  background-image: url(/assets/icons/info-blue.gif);
+  color: #4b7aa9;
+}
+
+/* line 358, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd input {
+  border: 1px solid #bbb;
+  padding: 4px;
+  font-weight: bold;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  background-image: -moz-linear-gradient(top, #efefef, white);
+}
+
+/* line 359, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd input.focused {
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e2f4ff), to(white));
+  background-image: -moz-linear-gradient(top, #e2f4ff, white);
+  border-color: #b4cfdf;
+}
+
+/* line 360, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd input.password {
+  width: 120px;
+  margin-right: 5px;
+}
+
+/* line 361, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd input.full {
+  width: 260px;
+}
+
+/* line 362, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd input.long {
+  width: 400px;
+}
+
+/* line 363, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd textarea {
+  height: 115px;
+  border: 1px solid #bbb;
+  padding: 4px;
+  width: 100%;
+  white-space: nowrap;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  background-image: -moz-linear-gradient(top, #efefef, white);
+}
+
+/* line 364, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.text {
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+/* line 365, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.check {
+  padding-top: 5px;
+}
+
+/* line 366, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.check label {
+  margin-left: 3px;
+}
+
+/* line 367, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd a.reset {
+  color: #666;
+  margin-left: 10px;
+}
+
+/* line 368, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.button {
+  padding-top: 5px;
+}
+
+/* line 369, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.button a {
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#dddddd));
+  background-image: -moz-linear-gradient(top, white, #dddddd);
+  border: 1px solid #bbb;
+  color: #444;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-size: 90%;
+}
+
+/* line 370, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.button a b {
+  padding: 6px;
+  padding-left: 22px;
+  background: url(/assets/icons/email.png) no-repeat 0 4px;
+  font-weight: normal;
+}
+
+/* line 371, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.button.password a b {
+  background-image: url(/assets/icons/login.png);
+}
+
+/* line 372, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dt.avatar {
+  margin-top: 2px;
+}
+
+/* line 373, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.avatar {
+  margin-top: 20px;
+  padding-top: 6px;
+}
+
+/* line 374, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.avatar img {
+  float: left;
+  margin-right: 10px;
+  margin-top: -7px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  padding: 1px;
+}
+
+/* line 375, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd.avatar a {
+  padding-top: 10px;
+}
+
+/* line 376, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl dd a {
+  color: #333;
+}
+
+/* line 377, ../../app/assets/stylesheets/application.css.scss */
+#content form fieldset dl.preferences {
+  margin-top: 15px;
+}
+
+/* line 379, ../../app/assets/stylesheets/application.css.scss */
+#content table.permissions {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* line 380, ../../app/assets/stylesheets/application.css.scss */
+#content table.permissions th {
+  padding: 6px;
+  background: #efefef;
+  border: 1px solid #ccc;
+  width: 1%;
+}
+
+/* line 381, ../../app/assets/stylesheets/application.css.scss */
+#content table.permissions td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+/* line 383, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output {
+  background: #111;
+  color: #fff;
+  font-size: 110%;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+/* line 384, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.time {
+  color: #999;
+  font-size: 80%;
+}
+
+/* line 385, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type {
+  font-weight: bold;
+}
+
+/* line 386, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.login {
+  color: #81dc00;
+}
+
+/* line 387, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.god_login {
+  color: #dc00c0;
+}
+
+/* line 388, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.failed_god_login {
+  color: #ff6c00;
+}
+
+/* line 389, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.failed_login {
+  color: #dc0000;
+}
+
+/* line 390, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.register {
+  color: #0096dc;
+}
+
+/* line 391, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.auth_code_login {
+  color: #fff600;
+}
+
+/* line 392, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.changed_password {
+  color: #00d2ff;
+}
+
+/* line 393, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.reset_password {
+  color: #00d2ff;
+}
+
+/* line 394, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.persistent_auth_code_login, ul.log-output li span.type.two_factor_persistent_success {
+  color: #fff600;
+}
+
+/* line 395, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.two_factor_success {
+  color: #81dc00;
+}
+
+/* line 396, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.type.two_factor_failure {
+  color: #dc0000;
+}
+
+/* line 397, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.ip a {
+  color: #666;
+}
+
+/* line 398, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li span.ip {
+  font-size: 90%;
+  color: #666;
+}
+
+/* line 399, ../../app/assets/stylesheets/application.css.scss */
+ul.log-output li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+/* line 401, ../../app/assets/stylesheets/application.css.scss */
+#content pre {
+  overflow-x: auto;
+  background: #efefef;
+  padding: 15px;
+  font-size: 90%;
+  border-top: 1px solid #ccc;
+}
+
+/* line 403, ../../app/assets/stylesheets/application.css.scss */
+#content p.search-bar {
+  margin-bottom: 15px;
+}
+
+/* line 404, ../../app/assets/stylesheets/application.css.scss */
+#content p.search-bar input.search {
+  font-size: 150%;
+  width: 80%;
+  margin-right: 10px;
+}
+
+/* line 406, ../../app/assets/stylesheets/application.css.scss */
+table.data {
+  width: 100%;
+  font-size: 90%;
+}
+
+/* line 407, ../../app/assets/stylesheets/application.css.scss */
+table.data td {
+  padding: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+/* line 408, ../../app/assets/stylesheets/application.css.scss */
+table.data td a {
+  color: #333;
+}
+
+/* line 409, ../../app/assets/stylesheets/application.css.scss */
+table.data td.opts {
+  background: #efefef;
+  text-align: center;
+}
+
+/* line 410, ../../app/assets/stylesheets/application.css.scss */
+table.data td.opts a {
+  margin: 0 2px;
+}
+
+/* line 411, ../../app/assets/stylesheets/application.css.scss */
+table.data thead td {
+  background: #efefef;
+  font-weight: bold;
+}
+
+/* line 412, ../../app/assets/stylesheets/application.css.scss */
+#content table.data ul li {
+  float: none;
+  list-style: disc;
+  margin-left: 15px;
+}
+
+/* line 414, ../../app/assets/stylesheets/application.css.scss */
+table.props {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 90%;
+}
+
+/* line 415, ../../app/assets/stylesheets/application.css.scss */
+table.props th {
+  width: 25%;
+  border: 1px solid #ccc;
+  padding: 6px;
+  font-weight: bold;
+  background: #efefef;
+}
+
+/* line 416, ../../app/assets/stylesheets/application.css.scss */
+table.props td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+/* line 417, ../../app/assets/stylesheets/application.css.scss */
+table.props td a {
+  color: #333;
+}
+
+/* line 418, ../../app/assets/stylesheets/application.css.scss */
+table.props td ul {
+  line-height: 1.5;
+}
+
+/* line 419, ../../app/assets/stylesheets/application.css.scss */
+table.props td ul.services li {
+  padding-left: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+}
+
+/* line 420, ../../app/assets/stylesheets/application.css.scss */
+table.props td ul.services li.billing {
+  background-image: url(/assets/icons/billing.png);
+}
+
+/* line 421, ../../app/assets/stylesheets/application.css.scss */
+table.props td ul.services li.support {
+  background-image: url(/assets/icons/support.png);
+}
+
+/* line 423, ../../app/assets/stylesheets/application.css.scss */
+p.sandbox {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 130%;
+  font-weight: bold;
+  -moz-box-shadow: 0 0 10px #666666;
+  -webkit-box-shadow: 0 0 10px #666666;
+  box-shadow: 0 0 10px #666666;
+  height: 35px;
+}
+
+/* line 424, ../../app/assets/stylesheets/application.css.scss */
+p.sandbox span.logo {
+  color: #ccc;
+}
+
+/* line 425, ../../app/assets/stylesheets/application.css.scss */
+p.sandbox span.text {
+  display: block;
+  color: #999;
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 3px;
+}
+
+/* line 427, ../../app/assets/stylesheets/application.css.scss */
+#content a.claim-type-banner {
+  background-color: #f7f7f7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#f7f7f7));
+  background-image: -moz-linear-gradient(top, #efefef, #f7f7f7);
+  border: 1px solid #dadada;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 25px;
+  margin-left: 90px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  padding: 10px;
+}
+/* line 437, ../../app/assets/stylesheets/application.css.scss */
+#content a.claim-type-banner .inner {
+  padding-left: 25px;
+  background: imgae-url("icons/login.png") no-repeat 0 0;
+}
+/* line 438, ../../app/assets/stylesheets/application.css.scss */
+#content a.claim-type-banner h5 {
+  font-weight: bold;
+  font-size: 115%;
+  margin-bottom: 5px;
+}
+/* line 439, ../../app/assets/stylesheets/application.css.scss */
+#content a.claim-type-banner p {
+  font-size: 90%;
+  color: #666;
+  line-height: 1.6;
+}
+/* line 440, ../../app/assets/stylesheets/application.css.scss */
+#content a.claim-type-banner:hover {
+  background: #ececec;
+}
