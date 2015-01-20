@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome - aTech Media</title>
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="qeRJHaG06nM5QzfZroChzYoFPA2j5b1s9kFkQ9FUuVc=" name="csrf-token" />
+    <link href="/assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/assets/application.js" type="text/javascript"></script>
+    <link href='/favicon.png' rel='icon' style='image/png'>
+</head>
+<body class=' production'>
+<script src="/assets/remote.js" type="text/javascript"></script>
+<script>
+    //<![CDATA[
+    var atechIdentity = new AtechIdentity();
+    atechIdentity.displayIdentityBarShell();
+    $(document).ready(function() {
+        atechIdentity.receiveUserData({"username":"shukai-zhao-52","name":{"first":"shukai","last":"zhao"},"time_zone":null,"identifier":"b7c20ab9-af32-b6f9-813a-9e2d674bb3dc","admin":false,"display_bar":true,"avatar":"gravatar","avatar_url":"https://secure.gravatar.com/avatar/3f4dd56266e670a1104bb27036591b51?rating=PG&size={{size}}&default=mm","email_addresses":["pheonix0862@hotmail.com"],"verified_emails":[],"verified":false,"assignments":[{"account_identifier":"23038","label":"shukai0828","url":"https://shukai0828.deployhq.com","identifier":"8ba297a0-6b62-e6cb-1b77-71b87ad8b9f8","email_address":null,"application":{"name":"Deploy","identifier":"2a9869df-7c90-3f32-0538-0bec6f4c4129","url":"http://www.deployhq.com","colour":"#b0ca0d"}},{"account_identifier":"27268","label":"shukai0828","url":"https://shukai08282.deployhq.com","identifier":"e71a108c-c08d-6f92-c664-17138d16b148","email_address":null,"application":{"name":"Deploy","identifier":"2a9869df-7c90-3f32-0538-0bec6f4c4129","url":"http://www.deployhq.com","colour":"#b0ca0d"}}]});
+    })
+    //]]>
+</script>
+
+<div id='content'>
+    <h2 class='intro'>Welcome to your <b>aTech Media</b> account</h2>
+    <p class='intro'>
+        <b>Hello shukai</b>. This page shows all the services which you
+        currently have access to, you can click on these to access them. The navigation below will allow
+        you to make changes to your account.
+    </p>
+    <div id="flash-notice"><p>Your password has been reset successfully. You can login to any of your services using one of the links below.</p></div>
+    <ul class='nav'>
+        <li class='services'><a href="/" class="active">My Services</a></li>
+        <li class='profile'><a href="/edit" class="">Update My Details</a></li>
+        <li class='password'><a href="/password" class="">Security</a></li>
+        <li class='emails'><a href="/email_addresses" class="">My E-Mail Addresses</a></li>
+        <li class='oauth'><a href="/oauth/apps" class="">Apps</a></li>
+        <li class='logout'><a href="/logout">Logout</a></li>
+    </ul>
+
+    <div class='application-wrapper'>
+        <table class='applications'>
+            <tr>
+                <td>
+                    <h4>
+                        <img alt="Favicon" height="16" src="https://atech.deployhq.com/images/favicon.png" width="16" />
+                        Deploy
+                    </h4>
+                    <p class='desc'>The deployment management platform for your Git, Mercurial &amp; Subversion repositories</p>
+                    <ul class='assignments'>
+                        <li><a href="/switch/8ba297a0-6b62-e6cb-1b77-71b87ad8b9f8">shukai0828</a></li>
+                        <li><a href="/switch/e71a108c-c08d-6f92-c664-17138d16b148">shukai0828</a></li>
+                    </ul>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+<div id='footer'>
+    <p class='meta'>
+        <b>&copy; 2015 aTech Media Limited.</b>
+    </p>
+    <p class='meta'>
+        This is our single sign on system allowing you to login to any of our web applications
+        with a single set of credentials.  If you have any problems or questions, please <a href="mailto:support@codebasehq.com">contact our support team</a>.
+    </p>
+</div>
+<!--- Revision:  54d12e6 (Wed, 10 Dec 2014 10:16:20 +0000)  Environment: production -->
+<!--- Visiting from: 111.203.133.11 (111.203.133.11) -->
+</body>
+</html>
