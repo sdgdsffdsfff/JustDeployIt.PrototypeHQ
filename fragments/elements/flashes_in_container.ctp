@@ -23,3 +23,14 @@
 <div class='flash flash--info section--first'>
     <p>You haven&rsquo;t added your repository settings yet. <a href="/projects/deepphpoop/repository">Add them now</a>.</p>
 </div>
+
+<!--
+用在form内，第一行
+-->
+<div class="flash flash--alert errors-block">
+    <h2>Whoops. There was a problem adding your server.</h2>
+    <p>There were problems with the following fields:</p>
+    <ul>
+        <li>We couldn't access this server using the credentials you have provided. Have you entered the username & password correctly?</li>
+    </ul>
+</div>
