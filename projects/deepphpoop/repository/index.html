@@ -5,12 +5,14 @@
     <meta content="eHFDo2ox5SIJoFdbv2EUUGZ98RJTvUtxxObbL0kstNU=" name="csrf-token" />
     <meta charset='utf-8'>
     <meta content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1' name='viewport'>
-    <title>New Project - treetree - Deploy</title>
+    <title>DeepPHPOOP - treetree - Deploy</title>
     <link href="/assets/cloud.typography.com/7257492/624966/css/fonts.css" media="screen" rel="stylesheet" />
     <link href="/assets/application-c2577e410b34fa9f4ea1e85a71113b0f.css" media="screen" rel="stylesheet" />
     <link href='/images/favicon.png' rel='icon' style='image/png'>
+    <meta content='deepphpoop' name='project-id'>
+    <link href='/projects/deepphpoop/deployments.rss?token=u2c0ljxymnztvid2l99yx0wbogc8g3the4e3tkr7' rel='alternate' title='Deployment History for DeepPHPOOP' type='application/rss+xml'>
 </head>
-<body class='js-projects-new'>
+<body class='js-repositories-show'>
 <div class='header'>
     <div class='header__inner'>
         <div class='container'>
@@ -58,131 +60,114 @@
         </div>
     </nav>
 </div>
+<div class='second-navigation js-nav-bar is-menu-closed'>
+    <div class='container u-clearfix'>
+        <div class='second-navigation__title'>
+            <a class="g-text-semibold" href="/projects/deepphpoop">DeepPHPOOP</a>
+        </div>
+        <a class="second-navigation__toggle js-toggle-menu" href="#"><img alt="Menu Icon" class="second-navigation__toggle-img second-navigation__toggle-img--open" src="/assets/icon-menu-2eb971600fbdab538bd350931cbd5fe8.svg" />
+            <img alt="Menu Icon" class="second-navigation__toggle-img second-navigation__toggle-img--hide" src="/assets/icon-hide-3ee2bdbbde6b0a782e4c8d23241bccf6.svg" />
+        </a><ul class='second-menu'>
+        <li class='second-menu__item'>
+            <a class="second-menu__link" href="/projects/deepphpoop/deployments">Deployments</a>
+        </li>
+        <li class='second-menu__item is-dropdown'>
+            <a class="second-menu__link second-menu__link--dropdown" href="/projects/deepphpoop/edit">Settings</a>
+            <ul class='sub-menu box box--heavy'>
+                <li class='sub-menu__item'>
+                    <a class="sub-menu__link" href="/projects/deepphpoop/edit">General Settings</a>
+                </li>
+                <li class='sub-menu__item'>
+                    <a class="sub-menu__link" href="/projects/deepphpoop/servers">Servers &amp; Groups</a>
+                </li>
+                <li class='sub-menu__item'>
+                    <a class="sub-menu__link" href="/projects/deepphpoop/config_files">Config Files</a>
+                </li>
+                <li class='sub-menu__item'>
+                    <a class="sub-menu__link" href="/projects/deepphpoop/excluded_files">Excluded Files</a>
+                </li>
+                <li class='sub-menu__item'>
+                    <a class="sub-menu__link" href="/projects/deepphpoop/notifications">Notifications</a>
+                </li>
+                <li class='sub-menu__item'>
+                    <a class="sub-menu__link" href="/projects/deepphpoop/commands">SSH Commands</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</div>
 
+
+<div class='container'>
+    <div class='flash flash--spaced flash--neutral'>
+        <p>This project hasn&rsquo;t been deployed yet. <a href="/projects/deepphpoop/deployments/new">Deploy now</a>.</p>
+    </div>
+
+</div>
 <div class='container clearfix'>
 
     <div class='section section--first box'>
         <div class='page-header'>
-            <h2 class='page-header__title g-heading-alpha'>New Project</h2>
-            <div class='page-header__lead'>
-                <p>Once created, you’ll be able to add repository and server details. You have <strong>1 more project</strong> remaining. If you need more, <a href="/billing/package">click here to upgrade</a>.</p>
-
-            </div>
+            <h2 class='page-header__title g-heading-alpha'>Configure Repository Details</h2>
+            <p class='page-header__lead'>Every project in deploy needs to be linked to a source repository. This is the location where your source code will be taken from when deploying to your servers.</p>
         </div>
     </div>
-    <div class='content--constrained'>
-        <form accept-charset="UTF-8" action="/projects" class="new_project" id="new_project" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eHFDo2ox5SIJoFdbv2EUUGZ98RJTvUtxxObbL0kstNU=" /></div><div class='section section--first section--skinny box js-project-name'>
-            <div class='form-group'>
-                <label class="form-label" for="project_name">Enter a name for the project:</label>
-                <input autofocus="autofocus" class="form-control" id="project_name" name="project[name]" type="text" />
-            </div>
-        </div>
-            <div class='section section--first section--skinny box js-source-select'>
-                <h3 class='g-heading-beta'>Where is your respository hosted?</h3>
-                <div class='host-select row js-host-select'>
-                    <div class='host-select__column js-host' data-provider='github'>
-                        <a class="host-select__inner" href="#" title="github"><img alt="github" class="host-select__logo" src="/assets/logo-github-6dc2ba1f46e075155cd5ac8891c3b3c8.svg" /></a>
+    <div class='content--constrained js-repo-type is-git-repo'>
+        <div class='box section section--first section--skinny'>
+            <form accept-charset="UTF-8" action="/projects/deepphpoop/repository" class="new_repository" id="new_repository" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eHFDo2ox5SIJoFdbv2EUUGZ98RJTvUtxxObbL0kstNU=" /></div><div class='js-repo-manual-details is-git-repo'>
+                <h3 class='form-heading g-heading-gamma'>Repository Type</h3>
+                <div class='form-group'>
+                    <div class='radio-block radio-block--no-label'>
+                        <label class="radio-block__group radio-block__group--full" for="scm_type_git"><input checked="checked" class="radio-block__input js-scm-type" id="scm_type_git" name="repository[scm_type]" type="radio" value="git" />
+                            <span>Git</span>
+                        </label><label class="radio-block__group radio-block__group--full" for="scm_type_subversion"><input class="radio-block__input js-scm-type" id="scm_type_subversion" name="repository[scm_type]" type="radio" value="subversion" />
+                        <span>Subversion</span>
+                    </label><label class="radio-block__group radio-block__group--full" for="scm_type_mercurial"><input class="radio-block__input js-scm-type" id="scm_type_mercurial" name="repository[scm_type]" type="radio" value="mercurial" />
+                        <span>Mercurial</span>
+                    </label></div>
+                </div>
+                <hr class='form-separator'>
+                <div class='form-group'>
+                    <label class="form-label" for="repository_url">Full URL to repository</label>
+                    <input class="form-control js-repo-url" id="repository_url" name="repository[url]" type="text" />
+                </div>
+                <div class='form-group is-related-git is-related-mercurial'>
+                    <label class="form-label" for="repository_port">Custom repository port (if required)</label>
+                    <input class="form-control" id="repository_port" name="repository[port]" type="text" />
+                </div>
+                <div class='form-group is-related-git is-related-mercurial'>
+                    <label class="form-label" for="repository_branch">Default branch you wish to deploy from?</label>
+                    <input class="form-control" id="repository_branch" name="repository[branch]" type="text" />
+                </div>
+                <div class='form-group js-auth-requirement-http is-hidden'>
+                    <div class='form-group'>
+                        <label class="form-label" for="repository_username">Username</label>
+                        <input class="form-control" id="repository_username" name="repository[username]" type="text" />
                     </div>
-                    <div class='host-select__column js-host' data-provider='codebase'>
-                        <a class="host-select__inner" href="#" title="codebase"><img alt="codebase" class="host-select__logo" src="/assets/logo-codebase-d43e1f209ad2ff67a9d27c05be1ccf44.svg" /></a>
-                    </div>
-                    <div class='host-select__column js-host' data-provider='bitbucket'>
-                        <a class="host-select__inner" href="#" title="bitbucket"><img alt="bitbucket" class="host-select__logo" src="/assets/logo-bitbucket-80ea29fc1a2e1e35ca304910ac46e8dc.svg" /></a>
+                    <div class='form-group'>
+                        <label class="form-label" for="repository_password">Password</label>
+                        <input class="form-control" id="repository_password" name="repository[password]" type="password" />
+                        <p class='form-hint'>Username/Password for HTTP only.</p>
                     </div>
                 </div>
-                <input id="repository_source" name="repository_source" type="hidden" />
-                <p class='form-paragraph'>
-                    Hosted somewhere else? <a class="js-host-manual g-text-info g-text-underlined" href="#">Manually enter repository details</a>.
-                </p>
-            </div>
-            <div class='section section--first section--skinny box js-host-manual-details is-hidden'>
-                <h3 class='form-heading g-heading-beta'>Your Repository Details</h3>
-                <div class='js-repo-manual-details is-git-repo'>
-                    <h3 class='form-heading g-heading-gamma'>Repository Type</h3>
-                    <div class='form-group'>
-                        <div class='radio-block radio-block--no-label'>
-                            <label class="radio-block__group radio-block__group--full" for="scm_type_git"><input checked="checked" class="radio-block__input js-scm-type" id="scm_type_git" name="repository[scm_type]" type="radio" value="git" />
-                                <span>Git</span>
-                            </label><label class="radio-block__group radio-block__group--full" for="scm_type_subversion"><input class="radio-block__input js-scm-type" id="scm_type_subversion" name="repository[scm_type]" type="radio" value="subversion" />
-                            <span>Subversion</span>
-                        </label><label class="radio-block__group radio-block__group--full" for="scm_type_mercurial"><input class="radio-block__input js-scm-type" id="scm_type_mercurial" name="repository[scm_type]" type="radio" value="mercurial" />
-                            <span>Mercurial</span>
-                        </label></div>
-                    </div>
-                    <hr class='form-separator'>
-                    <div class='form-group'>
-                        <label class="form-label" for="repository_url">Full URL to repository</label>
-                        <input class="form-control js-repo-url" id="repository_url" name="repository[url]" type="text" />
-                    </div>
-                    <div class='form-group is-related-git is-related-mercurial'>
-                        <label class="form-label" for="repository_port">Custom repository port (if required)</label>
-                        <input class="form-control" id="repository_port" name="repository[port]" type="text" />
-                    </div>
-                    <div class='form-group is-related-git is-related-mercurial'>
-                        <label class="form-label" for="repository_branch">Default branch you wish to deploy from?</label>
-                        <input class="form-control" id="repository_branch" name="repository[branch]" type="text" />
-                    </div>
-                    <div class='form-group js-auth-requirement-http is-hidden'>
-                        <div class='form-group'>
-                            <label class="form-label" for="repository_username">Username</label>
-                            <input class="form-control" id="repository_username" name="repository[username]" type="text" />
-                        </div>
-                        <div class='form-group'>
-                            <label class="form-label" for="repository_password">Password</label>
-                            <input class="form-control" id="repository_password" name="repository[password]" type="password" />
-                            <p class='form-hint'>Username/Password for HTTP only.</p>
-                        </div>
-                    </div>
-                    <div class='form-group js-auth-requirement-ssh'>
-                        <label class="form-label" for="deploy_generated_public">Use this public key and add it to your repository server&#39;s authorized keys:</label>
-                        <textarea class='textarea textarea--snippet' id='deploy_generated_public' readonly>ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAqAnIAiQItqPoPvAREpdhQICT1yTFckVZ3FbejlY433FCtpcy618kpUhQhrTluC0GmB6fQ57cJbrFZt5H0nAidVqS8mv0eqeqpKyO3ggmYZeO+0nlu948Rv32UYCiDRBtgsyiZqgpJOSIJIGioLTfeMv/ojYOukJGu4LhXXMPGiltYU1Zykp2e0tWXzU0MX5duQ45DAuKn6ED2TL63SGGbm1TAQSIP959jHStkXL9GWF5etd207IULSGtjw0jV+CrvmDMIMsMpIRY80N9eNmy5uwvqmtM61EMWmaHgLmP7bKJ1RxGKqprQUb+TdwYiQA6Lm8kbRS+fQx17thn42oBTQ==</textarea>
-                    </div>
-                    <div class='form-group'>
-                        <button class="button button--positive u-margin-top" name="button" type="submit">Save Repository Details</button>
-                    </div>
-                </div>
-
                 <div class='form-group js-auth-requirement-ssh'>
-                    <p class='form-paragraph u-margin-top'>
-                        Want to use your own keys? <a class="js-key-upload g-text-info g-text-underlined" href="#">Upload your private key</a>.
-                    </p>
+                    <label class="form-label" for="deploy_generated_public">Use this public key and add it to your repository server&#39;s authorized keys:</label>
+                    <textarea class='textarea textarea--snippet' id='deploy_generated_public' readonly>ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAqAnIAiQItqPoPvAREpdhQICT1yTFckVZ3FbejlY433FCtpcy618kpUhQhrTluC0GmB6fQ57cJbrFZt5H0nAidVqS8mv0eqeqpKyO3ggmYZeO+0nlu948Rv32UYCiDRBtgsyiZqgpJOSIJIGioLTfeMv/ojYOukJGu4LhXXMPGiltYU1Zykp2e0tWXzU0MX5duQ45DAuKn6ED2TL63SGGbm1TAQSIP959jHStkXL9GWF5etd207IULSGtjw0jV+CrvmDMIMsMpIRY80N9eNmy5uwvqmtM61EMWmaHgLmP7bKJ1RxGKqprQUb+TdwYiQA6Lm8kbRS+fQx17thn42oBTQ==</textarea>
                 </div>
-                <div class='form-group js-private-key-upload is-hidden'>
-                    <label class="form-label" for="custom_private_key">To use your own private key, copy and paste it into the box below:</label>
-<textarea class="textarea" id="project_custom_private_key" name="project[custom_private_key]">
-</textarea>
-                    <p class='form-paragraph u-margin-top'>
-                        Or use the public key that Deploy has <a class="js-use-generated-public-key g-text-info g-text-underlined" href="#">generated for you</a>.
-                    </p>
+                <div class='form-group'>
+                    <button class="button button--positive u-margin-top" name="button" type="submit">Save Repository Details</button>
                 </div>
-
             </div>
-            <div class='form-submit'>
-                <input id="project_keypair_identifier" name="project[keypair_identifier]" type="hidden" value="216a88d3-5d26-25e6-fc31-d7c4fd370c08" />
-                <button class="button button--positive" name="button" type="submit">Create Project</button>
-            </div>
-        </form>
 
-    </div>
-    <div class='sidebar'>
-        <div class='content-block'>
-            <h3 class='sidebar__heading g-heading-gamma'>Supported SCMs</h3>
-            <p>We currently support the following version control systems:</p>
-            <ul>
-                <li>Git</li>
-                <li>Subversion</li>
-                <li>Mercurial</li>
-            </ul>
-            <p>We also integrate directly with <a href="http://www.codebasehq.com">Codebase</a> and other source code hosting sites.</p>
-            <h3 class='sidebar__heading g-heading-gamma'>Supported Servers</h3>
-            <p>We currently support the following server technologies for receiving your deployed code:</p>
-            <ul>
-                <li>SSH/SFTP</li>
-                <li>FTP</li>
-                <li>Amazon S3</li>
-                <li>Rackspace Cloud Files</li>
-            </ul>
+            </form>
+
         </div>
+    </div>
+    <div class='sidebar content-block'>
+        <h3 class='sidebar__heading g-heading-gamma'>Public Key</h3>
+        <p>If you connect to your repository using SSH, you'll need to upload this project's Deploy public key to it.</p>
+        <p><a class="button button--default js-public-key" href="/projects/deepphpoop/public_key">View Public Key</a></p>
     </div>
 
 </div>
@@ -230,7 +215,7 @@
                 <div class='feedback-bar__form'>
                     <h2 class='form-heading g-heading-gamma'>Report Bug</h2>
                     <form accept-charset="UTF-8" action="/feedback/report_bug" class="js-feedback" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eHFDo2ox5SIJoFdbv2EUUGZ98RJTvUtxxObbL0kstNU=" /></div>
-                        <input id="url" name="url" type="hidden" value="https://treetree.beta.deployhq.com/projects/new?action=new&amp;controller=projects" />
+                        <input id="url" name="url" type="hidden" value="https://treetree.beta.deployhq.com/projects/deepphpoop/repository?action=show&amp;controller=repositories&amp;project_id=deepphpoop" />
                         <div class='form-group'>
                             <label class="form-label" for="description">Describe Problem</label>
 <textarea class="textarea" id="description" name="description" rows="6">
@@ -275,12 +260,12 @@
 <script>
     //<![CDATA[
     window.Utility || (window.Utility = {});
-    Utility.RailsVars = {"user_timezone":"Etc/UTC","vwp_token":"13c9299896384ac5ac3cf68c"};
+    Utility.RailsVars = {"user_timezone":"Etc/UTC","vwp_token":"13c9299896384ac5ac3cf68c","project":"deepphpoop"};
 
     (function() {
-        window.$this = new (App.Projects || App.Base)();
-        if (typeof $this.new === 'function') {
-            return $this.new.call();
+        window.$this = new (App.Repositories || App.Base)();
+        if (typeof $this.show === 'function') {
+            return $this.show.call();
         }
     })();
 
@@ -293,12 +278,12 @@
     atechIdentity.host = 'http://pt.justdeployit.com';
     atechIdentity.userKey = '3b2662a4-843b-798f-417b-5755dda2e195';
     atechIdentity.applicationKey = '2a9869df-7c90-3f32-0538-0bec6f4c4129';
-    atechIdentity.expiry = 1421903791;
-    atechIdentity.authHash = 'a7187af9224df9201e3aa9c8e4865c705a19326f';
+    atechIdentity.expiry = 1421904506;
+    atechIdentity.authHash = 'f7914b35ffcc76b2ba37b7e2301a3b832c81a49b';
     atechIdentity.getRemoteUserData();
     //]]>
 </script>
 
-<!--- Version 7c5371, served by vdtapp-531-9416-7ea07d4eb2 -->
+<!--- Version 7c5371, served by vdtapp-531-9415-c6b52f765b -->
 </body>
 </html>
