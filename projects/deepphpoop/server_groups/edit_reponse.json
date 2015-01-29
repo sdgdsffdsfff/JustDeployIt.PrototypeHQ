@@ -1,0 +1,24 @@
+{
+  "identifier": "2b2a4973-1dcd-c412-a57a-11f6ed4b7a41",
+  "name": "MyGroup",
+  "preferred_branch": "dev_zsk2",
+  "last_revision": null,
+  "servers": [
+    {
+      "identifier": "6cc01867-db63-74e8-0ee7-5fc874ec2fe1",
+      "name": "RoyalHost",
+      "protocol_type": "ftp",
+      "server_path": "",
+      "auto_deploy_url": "http://treetree.beta.deployhq.com/deploy/deepphpoop/to/royalhost/ypcv16ibwaud",
+      "last_revision": null,
+      "preferred_branch": "dev_zsk",
+      "notify_email": false,
+      "server_group_identifier": "2b2a4973-1dcd-c412-a57a-11f6ed4b7a41",
+      "hostname": "f13-preview.royalwebhosting.net",
+      "username": "1770006",
+      "port": "21",
+      "passive": true,
+      "force_hidden_files": false
+    }
+  ]
+}
