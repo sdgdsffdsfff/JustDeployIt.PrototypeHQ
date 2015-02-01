@@ -1,0 +1,16 @@
+{
+	"identifier":"55509fb8-5ef9-b6ed-daff-8cb03090abba",
+	"name":"RoyalHost2",
+	"protocol_type":"ftp",
+	"server_path":"",
+	"auto_deploy_url":"http://treetree.beta.deployhq.com/deploy/deepphpoop/to/royalhost2/8cknjzqi0j21",
+	"last_revision":null,
+	"preferred_branch":"dev_zsk",
+	"notify_email":false,
+	"server_group_identifier":null,
+	"hostname":"f13-preview.royalwebhosting.net",
+	"username":"1770006",
+	"port":"21",
+	"passive":true,
+	"force_hidden_files":false
+}
